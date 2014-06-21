@@ -2,7 +2,38 @@
 var onDeviceReady = require('./ready.js');
 
 document.addEventListener('deviceready', onDeviceReady, false);
-},{"./ready.js":2}],2:[function(require,module,exports){
+},{"./ready.js":3}],2:[function(require,module,exports){
+exports.uploadWav = function(audioURI) {
+    var options = new FileUploadOptions();
+    options.fileKey = "file";
+    options.fileName = audioURI.substr(audioURI.lastIndexOf('/')+1);
+    options.mimeType = "audio/wav";
+
+    var params = {};
+    params.value1 = "test";
+    params.value2 = "param";
+
+    options.params = params;
+
+    var ft = new FileTransfer();
+    ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), win, fail, options);
+};
+
+var win = function(r) {
+    console.log("Code = " + r.responseCode);
+    console.log("Response = " + r.response);
+    console.log("Sent = " + r.bytesSent);
+};
+
+var fail = function(error) {
+    alert("An error has occurred: Code = " + error.code);
+    console.log("upload error source " + error.source);
+    console.log("upload error target " + error.target);
+};
+
+},{}],3:[function(require,module,exports){
+var audioManager = require("./audioManager");
+
 var captureSuccess = function(mediaFiles) {
   // var i, path, len;
   // for (i = 0, len = mediaFiles.length; i < len; i += 1) {
@@ -82,4 +113,4 @@ module.exports = function(){
 
 
 
-},{}]},{},[1])
+},{"./audioManager":2}]},{},[1])
