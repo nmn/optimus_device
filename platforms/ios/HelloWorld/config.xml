@@ -29,6 +29,9 @@
     <feature name="Media">
         <param name="ios-package" value="CDVSound" />
     </feature>
+    <feature name="FileTransfer">
+        <param name="ios-package" value="CDVFileTransfer" />
+    </feature>
     <name>HelloWorld</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

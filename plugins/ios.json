@@ -10,7 +10,7 @@
                     "AssetsLibrary.framework": [
                         {
                             "xml": "false",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "MobileCoreServices.framework": [
@@ -55,6 +55,10 @@
                         {
                             "xml": "<feature name=\"Media\"><param name=\"ios-package\" value=\"CDVSound\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"ios-package\" value=\"CDVFileTransfer\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -72,6 +76,9 @@
             "PACKAGE_NAME": "com.namangoel.hello"
         },
         "org.apache.cordova.media": {
+            "PACKAGE_NAME": "com.namangoel.hello"
+        },
+        "org.apache.cordova.file-transfer": {
             "PACKAGE_NAME": "com.namangoel.hello"
         }
     },
