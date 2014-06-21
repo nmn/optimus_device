@@ -9193,11 +9193,7 @@ return jQuery;
 },{}],2:[function(require,module,exports){
 var onDeviceReady = require('./ready.js');
 document.addEventListener('deviceready', onDeviceReady, false);
-<<<<<<< HEAD
-},{"./ready.js":3}],2:[function(require,module,exports){
-=======
 },{"./ready.js":4}],3:[function(require,module,exports){
->>>>>>> b071dd6571b488694ebfa1ec715186acb9993259
 exports.uploadWav = function(audioURI) {
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -9210,11 +9206,8 @@ exports.uploadWav = function(audioURI) {
 
     options.params = params;
 
-<<<<<<< HEAD
-=======
     console.log("URI:", options.fileName);
 
->>>>>>> b071dd6571b488694ebfa1ec715186acb9993259
     var ft = new FileTransfer();
     ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), win, fail, options);
 };
@@ -9231,12 +9224,8 @@ var fail = function(error) {
     console.log("upload error target " + error.target);
 };
 
-<<<<<<< HEAD
-},{}],3:[function(require,module,exports){
-=======
 },{}],4:[function(require,module,exports){
 var $ = require("jquery");
->>>>>>> b071dd6571b488694ebfa1ec715186acb9993259
 var audioManager = require("./audioManager");
 
 var captureSuccess = function(mediaFiles) {
@@ -9266,8 +9255,4 @@ module.exports = function(){
 
 
 
-<<<<<<< HEAD
-},{"./audioManager":2}]},{},[1])
-=======
 },{"./audioManager":3,"jquery":1}]},{},[2])
->>>>>>> b071dd6571b488694ebfa1ec715186acb9993259
