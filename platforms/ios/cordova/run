@@ -25,7 +25,7 @@
 #     "iPad (Retina)"
 
 OPTION_RESULT=()
-TARGET="iPhone (Retina 3.5-inch)"
+TARGET="iPhone (Retina 4-inch)"
 TARGET_FLAG='--family iphone --retina'
 # multi-device flow default
 USE_DEVICE=true

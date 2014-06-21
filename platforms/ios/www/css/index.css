@@ -1,3 +1,6 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
 * {
   -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -25,13 +28,20 @@ body {
   padding-bottom: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  margin: 4rem auto 0;
+  margin: 30% auto 0;
+  background-position: center center;
+  -webkit-background-size: 100px 100px;
+  -moz-background-size: 100px 100px;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
 }
 .app .text {
-  background: #008000;
+  background-color: #7aff00;
+  background-image: url("../img/text.svg");
 }
 .app .voice {
-  background: #0ff;
+  background-color: #18cae6;
+  background-image: url("../img/mic.svg");
 }
 h1 {
   position: fixed;

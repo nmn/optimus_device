@@ -38,6 +38,8 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <plugin name="File" value="CDVFile" />
+    <plugin name="FileTransfer" value="CDVFileTransfer" />
     <plugin name="Media" value="CDVSound" />
     <feature name="Capture">
         <param name="ios-package" value="CDVCapture" />
