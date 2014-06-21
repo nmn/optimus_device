@@ -10,6 +10,8 @@ exports.uploadWav = function(audioURI) {
 
     options.params = params;
 
+    console.log("URI:", options.fileName);
+
     var ft = new FileTransfer();
     ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), win, fail, options);
 };
