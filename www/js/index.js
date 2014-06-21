@@ -45,5 +45,26 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        var captureSuccess = function(mediaFiles) {
+        var i, path, len;
+        for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+            path = mediaFiles[i].fullPath;
+            // do something interesting with the file
+            console.log("Got Files:", len);
+        }
+        };
+
+        // capture error callback
+        var captureError = function(error) {
+        navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+        };
+
+        // start audio capture
+        document.getElementById('deviceready').addEventListener('touchstart', function(e){
+            navigator.notification.alert("Something");
+            //navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});
+        });
+        
     }
 };

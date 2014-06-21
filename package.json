@@ -1,0 +1,29 @@
+{
+  "name": "Optimus",
+  "version": "0.0.1",
+  "description": "Small Business Virtual Assistant",
+  "main": "www/index.html",
+  "scripts": {
+    "test": "cordova serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naman34/optimus_device.git"
+  },
+  "keywords": [
+    "cordova",
+    "react",
+    "smallbizdev"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naman34/optimus_device/issues"
+  },
+  "homepage": "https://github.com/naman34/optimus_device",
+  "dependencies": {
+    "envify": "^1.2.1",
+    "gulp": "^3.8.1",
+    "react": "^0.10.0"
+  }
+}
