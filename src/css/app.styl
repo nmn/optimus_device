@@ -24,6 +24,12 @@
 
 //@media screen and (min-aspect-ratio: 1/1) and (min-width:400px)
 
+@keyframes wave
+  0%
+    transform translateX(0px)
+  100%
+    transform translateX(-94px)
+
 body
   background black
 
@@ -36,7 +42,7 @@ body
   overflow hidden
   -webkit-overflow-scrolling touch
   text-align center
-  .text, .voice
+  .text, .voice, .wave
     width 50%
     background-position center center
     background-size 40px 40px
@@ -50,10 +56,22 @@ body
     background-image url('../img/text.svg')
   .wave
     left 0
-    background-color #7AFF00
-    background-image url('../img/wave.svg')
-    background-position center center
-    background-size contain
+    &::before
+      content ''
+      display block
+      position absolute
+      top 0
+      left 0
+      width 320px
+      bottom 0
+      background-repeat repeat
+      background-image url('../img/wave.svg')
+      background-position 0px 0px
+      background-size contain
+      animation-name wave
+      animation-duration 0.35s
+      animation-timing-function linear
+      animation-iteration-count infinite
   .voice
     right 0
     background-color #18CAE6
