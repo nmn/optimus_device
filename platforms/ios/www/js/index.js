@@ -1,70 +1,85 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+var onDeviceReady = require('./ready.js');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-
-        var captureSuccess = function(mediaFiles) {
-        var i, path, len;
-        for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-            path = mediaFiles[i].fullPath;
-            // do something interesting with the file
-            console.log("Got Files:", len);
-        }
-        };
-
-        // capture error callback
-        var captureError = function(error) {
-        navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
-        };
-
-        // start audio capture
-        document.getElementById('deviceready').addEventListener('touchstart', function(e){
-            navigator.notification.alert("Something");
-            //navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});
-        });
-        
-    }
+document.addEventListener('deviceready', onDeviceReady, false);
+},{"./ready.js":2}],2:[function(require,module,exports){
+var captureSuccess = function(mediaFiles) {
+  // var i, path, len;
+  // for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+  //   path = mediaFiles[i].fullPath;
+    
+  //   //navigator.notification.alert("Got "+ len +" Files:" + path);
+  // }
+  console.log('success', arguments);
 };
+
+// capture error callback
+var captureError = function(error) {
+  console.log('fail', arguments);
+  //navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+};
+
+
+module.exports = function(){
+
+  var parentElement = document.getElementById('deviceready');
+  var listeningElement = parentElement.querySelector('.listening');
+  var receivedElement = parentElement.querySelector('.received');
+
+  listeningElement.setAttribute('style', 'display:none;');
+  receivedElement.setAttribute('style', 'display:block;');
+
+
+  var mediaRec = new Media('recording.wav', captureSuccess, captureError);
+  
+  parentElement.addEventListener('touchstart', function(){
+    //console.log(mediaRec.stopRecord);
+    mediaRec.startRecord();
+    //mediaRec.play();
+  });
+  parentElement.addEventListener('touchend', function(){
+    //navigator.notification.alert("Something");
+    mediaRec.stopRecord();
+    var file = new Media('recording.wav', captureSuccess, captureError);
+    file.play();
+    //mediaRec.pause();
+  });
+};
+
+
+//          var captureSuccess = function(mediaFiles) {
+//         var i, path, len;
+//         for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+//             path = mediaFiles[i].fullPath;
+//             // do something interesting with the file
+//             navigator.notification.alert("Got Files:" + len);
+//         }
+//         };
+
+//         // capture error callback
+//         var captureError = function(error) {
+//         navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+//         };
+
+//         // start audio capture
+//         //var mediaRec = new Media('myrecording.mp3', captureSuccess, captureError);
+//         parentElement.addEventListener('touchstart', function(e){
+//             //navigator.notification.alert("Something");
+//             // console.log('starting');
+//             // mediaRec.startRecord();
+//             // listeningElement.setAttribute('style', 'display:block;');
+//             // receivedElement.setAttribute('style', 'display:none;');
+//         });
+
+//         parentElement.addEventListener('touchend', function(e){
+//             navigator.notification.alert("Something");
+//             // console.log('ending');
+//             // mediaRec.startRecord();
+//             // listeningElement.setAttribute('style', 'display:none;');
+//             // receivedElement.setAttribute('style', 'display:block;');
+//         });
+
+
+
+
+},{}]},{},[1])

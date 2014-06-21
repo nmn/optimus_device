@@ -51,6 +51,10 @@
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Media\"><param name=\"ios-package\" value=\"CDVSound\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -65,6 +69,9 @@
             "PACKAGE_NAME": "com.namangoel.hello"
         },
         "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.namangoel.hello"
+        },
+        "org.apache.cordova.media": {
             "PACKAGE_NAME": "com.namangoel.hello"
         }
     },

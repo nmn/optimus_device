@@ -22,8 +22,13 @@
   },
   "homepage": "https://github.com/naman34/optimus_device",
   "dependencies": {
+    "browserify": "^4.1.11",
     "envify": "^1.2.1",
     "gulp": "^3.8.1",
-    "react": "^0.10.0"
+    "gulp-rename": "^1.2.0",
+    "gulp-stylus": "^1.0.2",
+    "nib": "^1.0.3",
+    "react": "^0.10.0",
+    "vinyl-source-stream": "^0.1.1"
   }
 }

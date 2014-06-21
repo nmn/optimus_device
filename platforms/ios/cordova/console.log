@@ -12,3 +12,487 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-06-21 11:58:45.476 HelloWorld[2022:70b] Resetting plugins due to page load.
 2014-06-21 11:58:45.586 HelloWorld[2022:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
 2014-06-21 11:58:48.640 HelloWorld[2022:70b] THREAD WARNING: ['Notification'] took '30.645264' ms. Plugin should use a background thread.
+2014-06-21 12:01:07.901 HelloWorld[96269:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:01:07.909 HelloWorld[96269:70b] Unlimited access to network resources
+2014-06-21 12:01:07.912 HelloWorld[96269:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:01:07.940 HelloWorld[96269:70b] [CDVTimer][file] 6.662965ms
+2014-06-21 12:01:07.940 HelloWorld[96269:70b] [CDVTimer][TotalPluginStartup] 7.265985ms
+2014-06-21 12:01:08.076 HelloWorld[96269:70b] Resetting plugins due to page load.
+2014-06-21 12:01:08.136 HelloWorld[96269:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:01:15.110 HelloWorld[96269:70b] Received memory warning.
+2014-06-21 12:02:21.878 HelloWorld[96565:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:02:21.890 HelloWorld[96565:70b] Unlimited access to network resources
+2014-06-21 12:02:21.896 HelloWorld[96565:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:02:21.923 HelloWorld[96565:70b] [CDVTimer][file] 2.499998ms
+2014-06-21 12:02:21.923 HelloWorld[96565:70b] [CDVTimer][TotalPluginStartup] 2.949953ms
+2014-06-21 12:02:22.149 HelloWorld[96565:70b] Resetting plugins due to page load.
+2014-06-21 12:02:22.626 HelloWorld[96565:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:02:24.945 HelloWorld[96565:70b] THREAD WARNING: ['Notification'] took '22.053955' ms. Plugin should use a background thread.
+2014-06-21 12:02:51.771 HelloWorld[96792:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:02:51.780 HelloWorld[96792:70b] Unlimited access to network resources
+2014-06-21 12:02:51.783 HelloWorld[96792:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:02:51.801 HelloWorld[96792:70b] [CDVTimer][file] 1.457036ms
+2014-06-21 12:02:51.801 HelloWorld[96792:70b] [CDVTimer][TotalPluginStartup] 1.753986ms
+2014-06-21 12:02:51.873 HelloWorld[96792:70b] Resetting plugins due to page load.
+2014-06-21 12:02:51.953 HelloWorld[96792:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:03:31.692 HelloWorld[96792:70b] THREAD WARNING: ['Notification'] took '22.581055' ms. Plugin should use a background thread.
+2014-06-21 12:03:33.480 HelloWorld[96792:70b] THREAD WARNING: ['Notification'] took '11.663086' ms. Plugin should use a background thread.
+2014-06-21 12:03:35.606 HelloWorld[96792:70b] THREAD WARNING: ['Notification'] took '11.208008' ms. Plugin should use a background thread.
+2014-06-21 12:04:49.025 HelloWorld[97058:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:04:49.032 HelloWorld[97058:70b] Unlimited access to network resources
+2014-06-21 12:04:49.034 HelloWorld[97058:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:04:49.052 HelloWorld[97058:70b] [CDVTimer][file] 1.479030ms
+2014-06-21 12:04:49.053 HelloWorld[97058:70b] [CDVTimer][TotalPluginStartup] 1.773000ms
+2014-06-21 12:04:49.108 HelloWorld[97058:70b] Resetting plugins due to page load.
+2014-06-21 12:04:49.157 HelloWorld[97058:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:05:05.935 HelloWorld[97058:70b] THREAD WARNING: ['Capture'] took '43.315186' ms. Plugin should use a background thread.
+2014-06-21 12:05:21.570 HelloWorld[97058:2d0b] 12:05:21.570 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 12:05:21.581 HelloWorld[97058:2d0b] 12:05:21.581 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 12:05:21.652 HelloWorld[97058:9307] 12:05:21.652 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 12:05:32.034 HelloWorld[97058:70b] THREAD WARNING: ['Notification'] took '17.281738' ms. Plugin should use a background thread.
+2014-06-21 12:05:38.719 HelloWorld[97058:70b] THREAD WARNING: ['Notification'] took '12.794189' ms. Plugin should use a background thread.
+2014-06-21 12:06:45.474 HelloWorld[97058:932f] 12:06:45.474 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 12:06:45.486 HelloWorld[97058:a03f] 12:06:45.486 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 12:06:45.486 HelloWorld[97058:a03f] 12:06:45.486 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 12:10:49.973 HelloWorld[97353:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:10:49.981 HelloWorld[97353:70b] Unlimited access to network resources
+2014-06-21 12:10:49.984 HelloWorld[97353:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:10:50.005 HelloWorld[97353:70b] [CDVTimer][file] 2.377033ms
+2014-06-21 12:10:50.006 HelloWorld[97353:70b] [CDVTimer][TotalPluginStartup] 2.835035ms
+2014-06-21 12:10:50.073 HelloWorld[97353:70b] Resetting plugins due to page load.
+2014-06-21 12:10:50.133 HelloWorld[97353:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:16:11.672 HelloWorld[98143:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:16:11.692 HelloWorld[98143:70b] Unlimited access to network resources
+2014-06-21 12:16:11.696 HelloWorld[98143:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:16:11.722 HelloWorld[98143:70b] [CDVTimer][file] 2.521992ms
+2014-06-21 12:16:11.722 HelloWorld[98143:70b] [CDVTimer][TotalPluginStartup] 2.983034ms
+2014-06-21 12:16:11.966 HelloWorld[98143:70b] Resetting plugins due to page load.
+2014-06-21 12:16:12.121 HelloWorld[98143:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:17:16.782 HelloWorld[98384:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:17:16.795 HelloWorld[98384:70b] Unlimited access to network resources
+2014-06-21 12:17:16.801 HelloWorld[98384:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:17:16.834 HelloWorld[98384:70b] [CDVTimer][file] 2.667010ms
+2014-06-21 12:17:16.835 HelloWorld[98384:70b] [CDVTimer][TotalPluginStartup] 3.522992ms
+2014-06-21 12:17:16.924 HelloWorld[98384:70b] Resetting plugins due to page load.
+2014-06-21 12:17:16.987 HelloWorld[98384:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:18:09.717 HelloWorld[98641:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:18:09.727 HelloWorld[98641:70b] Unlimited access to network resources
+2014-06-21 12:18:09.731 HelloWorld[98641:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:18:09.752 HelloWorld[98641:70b] [CDVTimer][file] 1.612961ms
+2014-06-21 12:18:09.752 HelloWorld[98641:70b] [CDVTimer][TotalPluginStartup] 1.913965ms
+2014-06-21 12:18:09.820 HelloWorld[98641:70b] Resetting plugins due to page load.
+2014-06-21 12:18:09.918 HelloWorld[98641:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:18:16.255 HelloWorld[98641:70b] THREAD WARNING: ['Notification'] took '19.906250' ms. Plugin should use a background thread.
+2014-06-21 12:18:17.977 HelloWorld[98641:70b] THREAD WARNING: ['Notification'] took '12.224854' ms. Plugin should use a background thread.
+2014-06-21 12:18:37.159 HelloWorld[98879:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:18:37.166 HelloWorld[98879:70b] Unlimited access to network resources
+2014-06-21 12:18:37.170 HelloWorld[98879:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:18:37.193 HelloWorld[98879:70b] [CDVTimer][file] 1.850009ms
+2014-06-21 12:18:37.194 HelloWorld[98879:70b] [CDVTimer][TotalPluginStartup] 2.170980ms
+2014-06-21 12:18:37.259 HelloWorld[98879:70b] Resetting plugins due to page load.
+2014-06-21 12:18:37.312 HelloWorld[98879:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:18:49.561 HelloWorld[98879:70b] THREAD WARNING: ['Notification'] took '19.093018' ms. Plugin should use a background thread.
+2014-06-21 12:45:50.940 HelloWorld[99967:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:45:50.951 HelloWorld[99967:70b] Unlimited access to network resources
+2014-06-21 12:45:50.996 HelloWorld[99967:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:45:51.049 HelloWorld[99967:70b] [CDVTimer][file] 3.409982ms
+2014-06-21 12:45:51.050 HelloWorld[99967:70b] [CDVTimer][TotalPluginStartup] 4.145980ms
+2014-06-21 12:45:51.264 HelloWorld[99967:70b] Resetting plugins due to page load.
+2014-06-21 12:45:51.340 HelloWorld[99967:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:47:12.364 HelloWorld[666:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:47:12.373 HelloWorld[666:70b] Unlimited access to network resources
+2014-06-21 12:47:12.376 HelloWorld[666:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:47:12.400 HelloWorld[666:70b] [CDVTimer][file] 2.452016ms
+2014-06-21 12:47:12.401 HelloWorld[666:70b] [CDVTimer][TotalPluginStartup] 2.890050ms
+2014-06-21 12:47:12.485 HelloWorld[666:70b] Resetting plugins due to page load.
+2014-06-21 12:47:12.535 HelloWorld[666:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:47:17.351 HelloWorld[666:70b] THREAD WARNING: ['Notification'] took '21.020020' ms. Plugin should use a background thread.
+2014-06-21 12:50:27.156 HelloWorld[1023:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:50:27.170 HelloWorld[1023:70b] Unlimited access to network resources
+2014-06-21 12:50:27.176 HelloWorld[1023:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:50:27.224 HelloWorld[1023:70b] [CDVTimer][file] 2.613008ms
+2014-06-21 12:50:27.224 HelloWorld[1023:70b] [CDVTimer][TotalPluginStartup] 3.069997ms
+2014-06-21 12:50:27.357 HelloWorld[1023:70b] Resetting plugins due to page load.
+2014-06-21 12:50:27.416 HelloWorld[1023:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:50:31.161 HelloWorld[1023:70b] THREAD WARNING: ['Notification'] took '37.291260' ms. Plugin should use a background thread.
+2014-06-21 12:52:12.813 HelloWorld[1314:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:52:12.822 HelloWorld[1314:70b] Unlimited access to network resources
+2014-06-21 12:52:12.825 HelloWorld[1314:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:52:12.846 HelloWorld[1314:70b] [CDVTimer][file] 1.581013ms
+2014-06-21 12:52:12.846 HelloWorld[1314:70b] [CDVTimer][TotalPluginStartup] 1.866996ms
+2014-06-21 12:52:12.905 HelloWorld[1314:70b] Resetting plugins due to page load.
+2014-06-21 12:52:12.953 HelloWorld[1314:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:52:18.310 HelloWorld[1314:70b] THREAD WARNING: ['Notification'] took '19.711914' ms. Plugin should use a background thread.
+2014-06-21 12:53:19.090 HelloWorld[1577:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:53:19.110 HelloWorld[1577:70b] Unlimited access to network resources
+2014-06-21 12:53:19.123 HelloWorld[1577:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:53:19.147 HelloWorld[1577:70b] [CDVTimer][file] 1.720965ms
+2014-06-21 12:53:19.148 HelloWorld[1577:70b] [CDVTimer][TotalPluginStartup] 2.053976ms
+2014-06-21 12:53:19.195 HelloWorld[1577:70b] Resetting plugins due to page load.
+2014-06-21 12:53:19.246 HelloWorld[1577:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:53:22.358 HelloWorld[1577:70b] THREAD WARNING: ['Notification'] took '14.852051' ms. Plugin should use a background thread.
+2014-06-21 12:54:30.978 HelloWorld[1855:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:54:30.985 HelloWorld[1855:70b] Unlimited access to network resources
+2014-06-21 12:54:30.988 HelloWorld[1855:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:54:31.008 HelloWorld[1855:70b] [CDVTimer][file] 1.598001ms
+2014-06-21 12:54:31.008 HelloWorld[1855:70b] [CDVTimer][TotalPluginStartup] 1.886010ms
+2014-06-21 12:54:31.052 HelloWorld[1855:70b] Resetting plugins due to page load.
+2014-06-21 12:54:31.095 HelloWorld[1855:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 12:58:26.583 HelloWorld[2192:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 12:58:26.593 HelloWorld[2192:70b] Unlimited access to network resources
+2014-06-21 12:58:26.595 HelloWorld[2192:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 12:58:26.618 HelloWorld[2192:70b] [CDVTimer][file] 2.395034ms
+2014-06-21 12:58:26.618 HelloWorld[2192:70b] [CDVTimer][TotalPluginStartup] 2.847970ms
+2014-06-21 12:58:26.710 HelloWorld[2192:70b] Resetting plugins due to page load.
+2014-06-21 12:58:26.758 HelloWorld[2192:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:01:14.885 HelloWorld[2481:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:01:14.892 HelloWorld[2481:70b] Unlimited access to network resources
+2014-06-21 13:01:14.894 HelloWorld[2481:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:01:14.914 HelloWorld[2481:70b] [CDVTimer][file] 2.034009ms
+2014-06-21 13:01:14.915 HelloWorld[2481:70b] [CDVTimer][TotalPluginStartup] 2.727985ms
+2014-06-21 13:01:14.963 HelloWorld[2481:70b] Resetting plugins due to page load.
+2014-06-21 13:01:15.052 HelloWorld[2481:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:01:24.233 HelloWorld[2481:70b] Resource for recording must have wav extension
+2014-06-21 13:01:38.537 HelloWorld[2481:70b] Resource for recording must have wav extension
+2014-06-21 13:02:48.169 HelloWorld[2481:70b] Resource for recording must have wav extension
+2014-06-21 13:02:50.870 HelloWorld[2481:70b] Resource for recording must have wav extension
+2014-06-21 13:02:50.881 HelloWorld[2481:70b] THREAD WARNING: ['Media'] took '11.544922' ms. Plugin should use a background thread.
+2014-06-21 13:03:29.101 HelloWorld[2722:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:03:29.108 HelloWorld[2722:70b] Unlimited access to network resources
+2014-06-21 13:03:29.111 HelloWorld[2722:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:03:29.134 HelloWorld[2722:70b] [CDVTimer][file] 2.524018ms
+2014-06-21 13:03:29.134 HelloWorld[2722:70b] [CDVTimer][TotalPluginStartup] 2.948999ms
+2014-06-21 13:03:29.180 HelloWorld[2722:70b] Resetting plugins due to page load.
+2014-06-21 13:03:29.219 HelloWorld[2722:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:04:12.366 HelloWorld[2722:70b] Resource for recording must have wav extension
+2014-06-21 13:04:15.416 HelloWorld[2722:70b] Resource for recording must have wav extension
+2014-06-21 13:04:17.183 HelloWorld[2722:70b] Resource for recording must have wav extension
+2014-06-21 13:05:02.383 HelloWorld[2967:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:05:02.398 HelloWorld[2967:70b] Unlimited access to network resources
+2014-06-21 13:05:02.402 HelloWorld[2967:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:05:02.434 HelloWorld[2967:70b] [CDVTimer][file] 2.820969ms
+2014-06-21 13:05:02.434 HelloWorld[2967:70b] [CDVTimer][TotalPluginStartup] 3.278971ms
+2014-06-21 13:05:02.528 HelloWorld[2967:70b] Resetting plugins due to page load.
+2014-06-21 13:05:02.596 HelloWorld[2967:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:05:20.017 HelloWorld[2967:70b] Resource for recording must have wav extension
+2014-06-21 13:05:20.028 HelloWorld[2967:70b] THREAD WARNING: ['Media'] took '11.418945' ms. Plugin should use a background thread.
+2014-06-21 13:05:21.742 HelloWorld[2967:70b] Resource for recording must have wav extension
+2014-06-21 13:05:23.007 HelloWorld[2967:70b] Resource for recording must have wav extension
+2014-06-21 13:09:35.005 HelloWorld[3232:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:09:35.013 HelloWorld[3232:70b] Unlimited access to network resources
+2014-06-21 13:09:35.016 HelloWorld[3232:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:09:35.052 HelloWorld[3232:70b] [CDVTimer][file] 14.564991ms
+2014-06-21 13:09:35.053 HelloWorld[3232:70b] [CDVTimer][TotalPluginStartup] 15.155971ms
+2014-06-21 13:09:35.121 HelloWorld[3232:70b] Resetting plugins due to page load.
+2014-06-21 13:09:35.281 HelloWorld[3232:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:09:39.243 HelloWorld[3232:70b] Will use resource 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3' from the Internet.
+2014-06-21 13:09:39.624 HelloWorld[3232:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:09:39.634 HelloWorld[3232:70b] THREAD WARNING: ['Media'] took '390.791992' ms. Plugin should use a background thread.
+2014-06-21 13:09:57.661 HelloWorld[3232:70b] Finished playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:06.598 HelloWorld[3461:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:10:06.609 HelloWorld[3461:70b] Unlimited access to network resources
+2014-06-21 13:10:06.612 HelloWorld[3461:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:10:06.634 HelloWorld[3461:70b] [CDVTimer][file] 1.344025ms
+2014-06-21 13:10:06.634 HelloWorld[3461:70b] [CDVTimer][TotalPluginStartup] 1.636028ms
+2014-06-21 13:10:06.686 HelloWorld[3461:70b] Resetting plugins due to page load.
+2014-06-21 13:10:06.728 HelloWorld[3461:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:10:15.410 HelloWorld[3461:70b] Will use resource 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3' from the Internet.
+2014-06-21 13:10:15.576 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:15.598 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '188.471191' ms. Plugin should use a background thread.
+2014-06-21 13:10:16.265 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:16.306 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '40.905029' ms. Plugin should use a background thread.
+2014-06-21 13:10:16.833 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:18.665 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:18.709 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '43.836182' ms. Plugin should use a background thread.
+2014-06-21 13:10:19.143 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:19.506 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:19.545 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '38.949951' ms. Plugin should use a background thread.
+2014-06-21 13:10:19.847 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:19.859 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '11.850098' ms. Plugin should use a background thread.
+2014-06-21 13:10:22.606 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:22.645 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '39.139893' ms. Plugin should use a background thread.
+2014-06-21 13:10:23.263 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:26.375 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:26.418 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '43.555908' ms. Plugin should use a background thread.
+2014-06-21 13:10:26.740 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:35.866 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:35.915 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '48.778076' ms. Plugin should use a background thread.
+2014-06-21 13:10:36.043 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:36.055 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '11.486084' ms. Plugin should use a background thread.
+2014-06-21 13:10:36.840 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:36.890 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '50.013184' ms. Plugin should use a background thread.
+2014-06-21 13:10:37.143 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:37.861 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:37.900 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '39.523193' ms. Plugin should use a background thread.
+2014-06-21 13:10:38.114 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:38.540 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:10:38.586 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '45.235840' ms. Plugin should use a background thread.
+2014-06-21 13:11:37.987 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:11:38.253 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:11:38.296 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '43.257080' ms. Plugin should use a background thread.
+2014-06-21 13:11:41.621 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:11:41.633 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '12.129150' ms. Plugin should use a background thread.
+2014-06-21 13:11:41.859 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:11:41.900 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '41.120117' ms. Plugin should use a background thread.
+2014-06-21 13:11:43.270 HelloWorld[3461:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:11:43.281 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '11.611084' ms. Plugin should use a background thread.
+2014-06-21 13:11:43.981 HelloWorld[3461:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:11:44.024 HelloWorld[3461:70b] THREAD WARNING: ['Media'] took '43.339600' ms. Plugin should use a background thread.
+2014-06-21 13:11:59.748 HelloWorld[3686:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:11:59.756 HelloWorld[3686:70b] Unlimited access to network resources
+2014-06-21 13:11:59.761 HelloWorld[3686:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:11:59.784 HelloWorld[3686:70b] [CDVTimer][file] 1.368046ms
+2014-06-21 13:11:59.785 HelloWorld[3686:70b] [CDVTimer][TotalPluginStartup] 1.683056ms
+2014-06-21 13:11:59.936 HelloWorld[3686:70b] Resetting plugins due to page load.
+2014-06-21 13:12:00.038 HelloWorld[3686:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:12:04.080 HelloWorld[3686:70b] Will use resource 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3' from the Internet.
+2014-06-21 13:12:04.240 HelloWorld[3686:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:04.260 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '179.680176' ms. Plugin should use a background thread.
+2014-06-21 13:12:05.062 HelloWorld[3686:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:05.107 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '45.282959' ms. Plugin should use a background thread.
+2014-06-21 13:12:05.756 HelloWorld[3686:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:05.769 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '12.575684' ms. Plugin should use a background thread.
+2014-06-21 13:12:08.498 HelloWorld[3686:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:08.543 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '45.534668' ms. Plugin should use a background thread.
+2014-06-21 13:12:09.400 HelloWorld[3686:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:09.966 HelloWorld[3686:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:10.006 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '40.339844' ms. Plugin should use a background thread.
+2014-06-21 13:12:10.483 HelloWorld[3686:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:10.494 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '10.750244' ms. Plugin should use a background thread.
+2014-06-21 13:12:10.892 HelloWorld[3686:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:10.935 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '43.392090' ms. Plugin should use a background thread.
+2014-06-21 13:12:11.484 HelloWorld[3686:70b] Playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:12.048 HelloWorld[3686:70b] Paused playing audio sample 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3'
+2014-06-21 13:12:12.096 HelloWorld[3686:70b] THREAD WARNING: ['Media'] took '48.489014' ms. Plugin should use a background thread.
+2014-06-21 13:14:23.356 HelloWorld[3922:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:14:23.363 HelloWorld[3922:70b] Unlimited access to network resources
+2014-06-21 13:14:23.366 HelloWorld[3922:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:14:23.385 HelloWorld[3922:70b] [CDVTimer][file] 1.981020ms
+2014-06-21 13:14:23.385 HelloWorld[3922:70b] [CDVTimer][TotalPluginStartup] 2.416015ms
+2014-06-21 13:14:23.427 HelloWorld[3922:70b] Resetting plugins due to page load.
+2014-06-21 13:14:23.468 HelloWorld[3922:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:14:37.914 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:14:37.915 HelloWorld[3922:70b] THREAD WARNING: ['Media'] took '167.578857' ms. Plugin should use a background thread.
+2014-06-21 13:14:38.830 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:14:38.831 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:14:42.662 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:14:42.664 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:14:44.080 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:14:44.089 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:14:47.608 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:14:47.609 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:14:49.778 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:14:49.787 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:14:53.924 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:14:53.925 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:14:55.544 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:14:55.553 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:03.688 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:03.690 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:05.012 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:05.022 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:05.546 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:05.548 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:06.587 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:06.596 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:07.113 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:07.114 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:07.230 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:07.240 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:07.775 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:07.777 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:08.521 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:08.530 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:09.656 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:09.657 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:12.067 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:12.076 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:14.219 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:14.220 HelloWorld[3922:70b] THREAD WARNING: ['Media'] took '13.148926' ms. Plugin should use a background thread.
+2014-06-21 13:16:14.221 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:14.975 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:14.984 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:15.519 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:15.520 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:16.040 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:16.049 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:16.657 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:16.658 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:17.085 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:17.085 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:17.562 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:17.564 HelloWorld[3922:70b] THREAD WARNING: ['Media'] took '13.243164' ms. Plugin should use a background thread.
+2014-06-21 13:16:17.565 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:17.941 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:17.942 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:18.468 HelloWorld[3922:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:16:18.469 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:16:20.384 HelloWorld[3922:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:16:20.394 HelloWorld[3922:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:17:23.017 HelloWorld[4171:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:17:23.023 HelloWorld[4171:70b] Unlimited access to network resources
+2014-06-21 13:17:23.025 HelloWorld[4171:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:17:23.046 HelloWorld[4171:70b] [CDVTimer][file] 1.296997ms
+2014-06-21 13:17:23.046 HelloWorld[4171:70b] [CDVTimer][TotalPluginStartup] 1.592994ms
+2014-06-21 13:17:23.094 HelloWorld[4171:70b] Resetting plugins due to page load.
+2014-06-21 13:17:23.138 HelloWorld[4171:70b] Finished load of: file:///Users/nmn/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D0DF6022-6840-4D93-BFCB-D983056720AE/HelloWorld.app/www/index.html
+2014-06-21 13:17:37.130 HelloWorld[4171:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:17:37.132 HelloWorld[4171:70b] THREAD WARNING: ['Media'] took '75.385010' ms. Plugin should use a background thread.
+2014-06-21 13:17:39.971 HelloWorld[4171:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:17:39.980 HelloWorld[4171:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:17:39.989 HelloWorld[4171:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:17:39.997 HelloWorld[4171:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:17:39.999 HelloWorld[4171:70b] THREAD WARNING: ['Media'] took '10.323975' ms. Plugin should use a background thread.
+2014-06-21 13:17:42.854 HelloWorld[4171:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:17:57.250 HelloWorld[4171:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:17:57.251 HelloWorld[4171:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:17:59.056 HelloWorld[4171:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:17:59.057 HelloWorld[4171:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:17:59.074 HelloWorld[4171:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:17:59.085 HelloWorld[4171:70b] THREAD WARNING: ['Media'] took '27.953125' ms. Plugin should use a background thread.
+2014-06-21 13:17:59.086 HelloWorld[4171:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:18:00.850 HelloWorld[4171:70b] Finished playing audio sample 'recording.wav'
