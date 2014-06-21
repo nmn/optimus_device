@@ -1,0 +1,14 @@
+2014-06-21 11:58:45.287 HelloWorld[2022:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 11:58:45.301 HelloWorld[2022:70b] Unlimited access to network resources
+2014-06-21 11:58:45.306 HelloWorld[2022:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 11:58:45.330 HelloWorld[2022:70b] [CDVTimer][file] 2.524972ms
+2014-06-21 11:58:45.331 HelloWorld[2022:70b] [CDVTimer][TotalPluginStartup] 3.625989ms
+2014-06-21 11:58:45.476 HelloWorld[2022:70b] Resetting plugins due to page load.
+2014-06-21 11:58:45.586 HelloWorld[2022:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 11:58:48.640 HelloWorld[2022:70b] THREAD WARNING: ['Notification'] took '30.645264' ms. Plugin should use a background thread.
