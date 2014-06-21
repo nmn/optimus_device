@@ -17,11 +17,32 @@ body {
   background: #000;
 }
 .app {
+  text-align: center;
+}
+.app .text,
+.app .voice {
+  width: 50%;
+  padding-bottom: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 4rem auto 0;
+}
+.app .text {
+  background: #008000;
+}
+.app .voice {
+  background: #0ff;
+}
+h1 {
   position: fixed;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 100;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  padding: 0;
+  font-size: 1.6rem;
 }
