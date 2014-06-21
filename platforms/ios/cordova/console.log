@@ -53,3 +53,112 @@ You could find it at the following address https://developer.apple.com/icloud/do
 }
 2014-06-21 15:41:14.370 HelloWorld[8511:70b] Finished playing audio sample 'recording.wav'
 2014-06-21 15:41:17.086 HelloWorld[8511:70b] THREAD WARNING: ['FileTransfer'] took '3826.276123' ms. Plugin should use a background thread.
+objc[7538]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-21 16:16:41.808 HelloWorld[7538:70b] Cannot find executable for CFBundle 0xa33f290 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-21 16:16:41.829 HelloWorld[7538:70b] Cannot find executable for CFBundle 0xa55e240 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-21 16:16:41.959 HelloWorld[7538:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:16:42.006 HelloWorld[7538:70b] Unlimited access to network resources
+2014-06-21 16:16:42.014 HelloWorld[7538:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:16:42.332 HelloWorld[7538:70b] [CDVTimer][file] 11.308014ms
+2014-06-21 16:16:42.349 HelloWorld[7538:70b] [CDVTimer][TotalPluginStartup] 28.608978ms
+2014-06-21 16:16:42.832 HelloWorld[7538:70b] Resetting plugins due to page load.
+2014-06-21 16:16:43.100 HelloWorld[7538:70b] Finished load of: file:///Users/harish/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/61C01761-3E06-48B7-A8B8-8C95BCA98E8F/HelloWorld.app/www/index.html
+2014-06-21 16:16:59.533 HelloWorld[7538:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:16:59.537 HelloWorld[7538:70b] THREAD WARNING: ['Media'] took '215.937988' ms. Plugin should use a background thread.
+2014-06-21 16:17:01.217 HelloWorld[7538:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:17:01.222 HelloWorld[7538:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:17:01.228 HelloWorld[7538:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:17:01.244 HelloWorld[7538:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xa39ed00 {NSFilePath=recording.wav, NSUnderlyingError=0xa39ec60 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:17:01.247 HelloWorld[7538:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:17:02.893 HelloWorld[7538:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 16:17:04.563 HelloWorld[7538:70b] THREAD WARNING: ['FileTransfer'] took '3332.507080' ms. Plugin should use a background thread.
+objc[7765]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-21 16:19:06.985 HelloWorld[7765:70b] Cannot find executable for CFBundle 0xa36b010 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-21 16:19:07.006 HelloWorld[7765:70b] Cannot find executable for CFBundle 0xa5abd70 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-21 16:19:07.118 HelloWorld[7765:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:19:07.152 HelloWorld[7765:70b] Unlimited access to network resources
+2014-06-21 16:19:07.158 HelloWorld[7765:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:19:07.455 HelloWorld[7765:70b] [CDVTimer][file] 9.139001ms
+2014-06-21 16:19:07.456 HelloWorld[7765:70b] [CDVTimer][TotalPluginStartup] 9.693980ms
+2014-06-21 16:19:07.784 HelloWorld[7765:70b] Resetting plugins due to page load.
+2014-06-21 16:19:07.993 HelloWorld[7765:70b] Finished load of: file:///Users/harish/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/61C01761-3E06-48B7-A8B8-8C95BCA98E8F/HelloWorld.app/www/index.html
+2014-06-21 16:19:14.072 HelloWorld[7765:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:19:14.076 HelloWorld[7765:70b] THREAD WARNING: ['Media'] took '221.789062' ms. Plugin should use a background thread.
+2014-06-21 16:19:14.081 HelloWorld[7765:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:19:14.107 HelloWorld[7765:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xa6ce3e0 {NSFilePath=recording.wav, NSUnderlyingError=0xa6ee470 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:19:14.109 HelloWorld[7765:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:19:14.172 HelloWorld[7765:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:21:01.812 HelloWorld[7765:70b] THREAD WARNING: ['FileTransfer'] took '107724.786133' ms. Plugin should use a background thread.
+2014-06-21 16:21:01.870 HelloWorld[7765:3f07] void SendDelegateMessage(NSInvocation *): delegate (webView:decidePolicyForNavigationAction:request:frame:decisionListener:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-06-21 16:21:02.159 HelloWorld[7765:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:21:02.160 HelloWorld[7765:70b] THREAD WARNING: ['Media'] took '82.458984' ms. Plugin should use a background thread.
+2014-06-21 16:21:02.161 HelloWorld[7765:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:21:02.166 HelloWorld[7765:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:21:02.168 HelloWorld[7765:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:21:02.194 HelloWorld[7765:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xa6089b0 {NSFilePath=recording.wav, NSUnderlyingError=0x10161d10 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:21:02.195 HelloWorld[7765:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:21:02.239 HelloWorld[7765:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:26:01.677 HelloWorld[7765:70b] THREAD WARNING: ['FileTransfer'] took '299505.236084' ms. Plugin should use a background thread.
+objc[8122]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-21 16:26:04.462 HelloWorld[8122:70b] Cannot find executable for CFBundle 0xd838980 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-21 16:26:04.501 HelloWorld[8122:70b] Cannot find executable for CFBundle 0xa362fb0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-21 16:26:04.617 HelloWorld[8122:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:26:04.651 HelloWorld[8122:70b] Unlimited access to network resources
+2014-06-21 16:26:04.662 HelloWorld[8122:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:26:04.809 HelloWorld[8122:70b] [CDVTimer][file] 1.906991ms
+2014-06-21 16:26:04.809 HelloWorld[8122:70b] [CDVTimer][TotalPluginStartup] 2.412021ms
+2014-06-21 16:26:05.058 HelloWorld[8122:70b] Resetting plugins due to page load.
+2014-06-21 16:26:05.241 HelloWorld[8122:70b] Finished load of: file:///Users/harish/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/61C01761-3E06-48B7-A8B8-8C95BCA98E8F/HelloWorld.app/www/index.html
+2014-06-21 16:26:09.707 HelloWorld[8122:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:26:09.710 HelloWorld[8122:70b] THREAD WARNING: ['Media'] took '196.611816' ms. Plugin should use a background thread.
+2014-06-21 16:26:09.716 HelloWorld[8122:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:26:09.731 HelloWorld[8122:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xa57b670 {NSFilePath=recording.wav, NSUnderlyingError=0xa57b5c0 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:26:09.733 HelloWorld[8122:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:26:09.772 HelloWorld[8122:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:26:25.791 HelloWorld[8122:70b] THREAD WARNING: ['FileTransfer'] took '16072.724121' ms. Plugin should use a background thread.
+2014-06-21 16:26:25.793 HelloWorld[8122:3f07] void SendDelegateMessage(NSInvocation *): delegate (webView:decidePolicyForNavigationAction:request:frame:decisionListener:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-06-21 16:26:25.938 HelloWorld[8122:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:26:25.939 HelloWorld[8122:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:26:26.026 HelloWorld[8122:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:26:26.026 HelloWorld[8122:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:26:26.043 HelloWorld[8122:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xa580b80 {NSFilePath=recording.wav, NSUnderlyingError=0xa55c880 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:26:26.043 HelloWorld[8122:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:26:26.063 HelloWorld[8122:70b] Finished recording audio sample 'recording.wav'
