@@ -496,3 +496,102 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-06-21 13:17:59.085 HelloWorld[4171:70b] THREAD WARNING: ['Media'] took '27.953125' ms. Plugin should use a background thread.
 2014-06-21 13:17:59.086 HelloWorld[4171:70b] Finished recording audio sample 'recording.wav'
 2014-06-21 13:18:00.850 HelloWorld[4171:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:10.602 HelloWorld[4737:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 13:22:10.645 HelloWorld[4737:70b] Unlimited access to network resources
+2014-06-21 13:22:10.650 HelloWorld[4737:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 13:22:10.844 HelloWorld[4737:70b] [CDVTimer][file] 2.529979ms
+2014-06-21 13:22:10.845 HelloWorld[4737:70b] [CDVTimer][TotalPluginStartup] 3.250003ms
+2014-06-21 13:22:11.031 HelloWorld[4737:70b] Resetting plugins due to page load.
+2014-06-21 13:22:11.158 HelloWorld[4737:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 13:22:16.043 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:16.044 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '412.006836' ms. Plugin should use a background thread.
+2014-06-21 13:22:16.048 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:16.050 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:16.052 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:17.750 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:17.751 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:17.874 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:17.883 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:17.885 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:17.888 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:18.017 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:20.185 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:20.187 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '12.367676' ms. Plugin should use a background thread.
+2014-06-21 13:22:20.188 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:20.324 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:20.327 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:20.335 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:20.337 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:20.465 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:22.136 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:22.137 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:22.315 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:22.324 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:22.325 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:22.332 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:22.346 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '20.837891' ms. Plugin should use a background thread.
+2014-06-21 13:22:22.473 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:22.891 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:22.892 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:23.020 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:23.029 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:23.031 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:23.039 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:23.042 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '11.372314' ms. Plugin should use a background thread.
+2014-06-21 13:22:23.170 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:24.760 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:24.761 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '10.189941' ms. Plugin should use a background thread.
+2014-06-21 13:22:24.762 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:24.863 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:24.865 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:24.871 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:24.877 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '12.416016' ms. Plugin should use a background thread.
+2014-06-21 13:22:24.878 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:24.981 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:25.933 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:25.935 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:26.064 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:26.072 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:26.074 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:26.082 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:26.212 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:37.680 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:37.681 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:37.786 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:37.789 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:37.797 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:37.808 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '18.994873' ms. Plugin should use a background thread.
+2014-06-21 13:22:37.809 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:37.936 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:40.615 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:40.617 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:40.778 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:40.787 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:40.790 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:40.800 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:40.813 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '22.907959' ms. Plugin should use a background thread.
+2014-06-21 13:22:40.941 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:41.811 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:41.812 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:42.722 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:42.724 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:42.740 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:42.752 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '27.829102' ms. Plugin should use a background thread.
+2014-06-21 13:22:42.753 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:43.622 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:22:47.801 HelloWorld[4737:70b] Started recording audio sample 'recording.wav'
+2014-06-21 13:22:47.803 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '13.425049' ms. Plugin should use a background thread.
+2014-06-21 13:22:47.804 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:47.933 HelloWorld[4737:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 13:22:47.934 HelloWorld[4737:70b] Will attempt to use file resource from LocalFileSystem.TEMPORARY directory
+2014-06-21 13:22:47.941 HelloWorld[4737:70b] Playing audio sample 'recording.wav'
+2014-06-21 13:22:47.953 HelloWorld[4737:70b] THREAD WARNING: ['Media'] took '18.686035' ms. Plugin should use a background thread.
+2014-06-21 13:22:47.954 HelloWorld[4737:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 13:22:48.045 HelloWorld[4737:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:23:39.933 HelloWorld[4737:70b] Received memory warning.
