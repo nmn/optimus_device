@@ -9191,10 +9191,17 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
+var speechManager = require("./speechManager");
+
+exports.executeCommand = function (speechStr){
+  console.log("Command:", speechStr);
+  speechManager.speakText("I'm alive!!!! Motherfucker");
+};
+},{"./speechManager":6}],3:[function(require,module,exports){
 var onDeviceReady = require('./ready.js');
 document.addEventListener('deviceready', onDeviceReady, false);
-},{"./ready.js":4}],3:[function(require,module,exports){
-exports.uploadWav = function(audioURI) {
+},{"./ready.js":5}],4:[function(require,module,exports){
+exports.uploadWav = function(audioURI, cb) {
     var options = new FileUploadOptions();
     options.fileKey = "file";
     options.fileName = audioURI.substr(audioURI.lastIndexOf('/')+1);
@@ -9209,24 +9216,30 @@ exports.uploadWav = function(audioURI) {
     console.log("URI:", options.fileName);
 
     var ft = new FileTransfer();
-    ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), win, fail, options);
+    var successCb = function(r) {
+        console.log("Code = " + r.responseCode);
+        console.log("Response = " + r.response);
+        console.log("Sent = " + r.bytesSent);
+        cb("Sample Text");
+    };
+    var failCb = function(error) {
+        alert("An error has occurred: Code = " + error.code);
+        console.log("upload error source " + error.source);
+        console.log("upload error target " + error.target);
+    };
+
+    ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), successCb, failCb, options);
+
+   
 };
 
-var win = function(r) {
-    console.log("Code = " + r.responseCode);
-    console.log("Response = " + r.response);
-    console.log("Sent = " + r.bytesSent);
-};
 
-var fail = function(error) {
-    alert("An error has occurred: Code = " + error.code);
-    console.log("upload error source " + error.source);
-    console.log("upload error target " + error.target);
-};
 
-},{}],4:[function(require,module,exports){
-var $ = require("jquery");
-var audioManager = require("./audioManager");
+
+},{}],5:[function(require,module,exports){
+var $ = require('jquery');
+var audioManager = require('./audioManager');
+var apiManager = require('./apiManager');
 
 var captureSuccess = function(mediaFiles) {
   console.log('success', arguments);
@@ -9239,20 +9252,26 @@ var captureError = function(error) {
 
 
 module.exports = function(){
-  console.log("TEST:",$(".voice")[0]);
+  console.log('TEST:',$('.voice')[0]);
   var mediaRec = new Media('recording.wav', captureSuccess, captureError);
   
-  $(".voice").on("touchstart", function(){
+  $('.voice').on('touchstart', function(){
     mediaRec.startRecord();
   });
-  $(".voice").on("touchend", function(){
+  $('.voice').on('touchend', function(){
     mediaRec.stopRecord();
     mediaRec.play();
-    audioManager.uploadWav("recording.wav");
+    audioManager.uploadWav('recording.wav', function(speechCmd){
+      apiManager.executeCommand(speechCmd);
+    });
   });
 };
 
 
 
 
-},{"./audioManager":3,"jquery":1}]},{},[2])
+},{"./apiManager":2,"./audioManager":4,"jquery":1}],6:[function(require,module,exports){
+exports.speakText = function(str){
+  console.log("Speak:", str);
+};
+},{}]},{},[3])

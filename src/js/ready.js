@@ -1,5 +1,6 @@
-var $ = require("jquery");
-var audioManager = require("./audioManager");
+var $ = require('jquery');
+var audioManager = require('./audioManager');
+var apiManager = require('./apiManager');
 
 var captureSuccess = function(mediaFiles) {
   console.log('success', arguments);
@@ -12,16 +13,18 @@ var captureError = function(error) {
 
 
 module.exports = function(){
-  console.log("TEST:",$(".voice")[0]);
+  console.log('TEST:',$('.voice')[0]);
   var mediaRec = new Media('recording.wav', captureSuccess, captureError);
   
-  $(".voice").on("touchstart", function(){
+  $('.voice').on('touchstart', function(){
     mediaRec.startRecord();
   });
-  $(".voice").on("touchend", function(){
+  $('.voice').on('touchend', function(){
     mediaRec.stopRecord();
     mediaRec.play();
-    audioManager.uploadWav("recording.wav");
+    audioManager.uploadWav('recording.wav', function(speechCmd){
+      apiManager.executeCommand(speechCmd);
+    });
   });
 };
 
