@@ -9,4 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <feature name="Capture">
+      <param name="ios-package" value="CDVCapture" />
+    </feature>
 </widget>
