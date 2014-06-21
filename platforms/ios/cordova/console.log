@@ -496,3 +496,17 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-06-21 13:17:59.085 HelloWorld[4171:70b] THREAD WARNING: ['Media'] took '27.953125' ms. Plugin should use a background thread.
 2014-06-21 13:17:59.086 HelloWorld[4171:70b] Finished recording audio sample 'recording.wav'
 2014-06-21 13:18:00.850 HelloWorld[4171:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 13:21:11.391 HelloWorld[4171:1213] 13:21:11.390 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:11.391 HelloWorld[4171:1213] 13:21:11.391 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:12.817 HelloWorld[4171:a707] 13:21:12.817 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:12.818 HelloWorld[4171:a707] 13:21:12.818 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:13.460 HelloWorld[4171:a707] 13:21:13.460 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:13.461 HelloWorld[4171:a707] 13:21:13.461 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:14.230 HelloWorld[4171:ac0f] 13:21:14.230 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:14.242 HelloWorld[4171:8707] 13:21:14.242 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:17.468 HelloWorld[4171:a707] 13:21:17.468 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:17.874 HelloWorld[4171:1213] 13:21:17.874 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:17.884 HelloWorld[4171:ac0f] 13:21:17.884 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:17.966 HelloWorld[4171:ac0f] 13:21:17.966 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:18.616 HelloWorld[4171:ac0f] 13:21:18.616 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
+2014-06-21 13:21:18.616 HelloWorld[4171:ac0f] 13:21:18.616 WARNING:   235: Default audio device changed. Restart the simulator to have it use the newly-selected device.
