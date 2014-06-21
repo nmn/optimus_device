@@ -12,4 +12,7 @@
     <feature name="Capture">
       <param name="ios-package" value="CDVCapture" />
     </feature>
+    <feature name="Notification">
+      <param name="ios-package" value="CDVNotification" />
+    </feature>
 </widget>

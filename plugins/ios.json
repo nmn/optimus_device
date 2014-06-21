@@ -24,6 +24,12 @@
                             "xml": "false",
                             "count": 1
                         }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "true",
+                            "count": 2
+                        }
                     ]
                 }
             },
@@ -37,6 +43,14 @@
                         {
                             "xml": "<feature name=\"Capture\"><param name=\"ios-package\" value=\"CDVCapture\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -45,6 +59,12 @@
     },
     "installed_plugins": {
         "org.apache.cordova.media-capture": {
+            "PACKAGE_NAME": "com.namangoel.hello"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.namangoel.hello"
+        },
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.namangoel.hello"
         }
     },
