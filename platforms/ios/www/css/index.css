@@ -20,28 +20,50 @@ body {
   background: #000;
 }
 .app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
   text-align: center;
 }
 .app .text,
 .app .voice {
   width: 50%;
-  padding-bottom: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  margin: 30% auto 0;
   background-position: center center;
-  -webkit-background-size: 100px 100px;
-  -moz-background-size: 100px 100px;
-  background-size: 100px 100px;
+  -webkit-background-size: 40px 40px;
+  -moz-background-size: 40px 40px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
 }
 .app .text {
+  left: 0;
   background-color: #7aff00;
   background-image: url("../img/text.svg");
 }
+.app .wave {
+  left: 0;
+  background-color: #7aff00;
+  background-image: url("../img/wave.svg");
+  background-position: center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
 .app .voice {
+  right: 0;
   background-color: #18cae6;
   background-image: url("../img/mic.svg");
+}
+.app .text.disabled {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 h1 {
   position: fixed;
