@@ -13,30 +13,57 @@ var captureError = function(error) {
   console.log('fail', arguments);
 };
 
+var log = function(){
+  var args = Array.prototype.slice.call(arguments);
+  return function(){
+    console.log.apply(console, args.concat(Array.prototype.slice.call(arguments)));
+  };
+};
 
 module.exports = function(){
 
+  var fileSystem;
 
   var $voice = $('.voice');
   var $text = $('.text');
   var $wave = $('.wave');
 
   var mediaRec;
+
+  window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, function(fs){fileSystem = fs;}, log('fileSystem'));
   
   $voice.on('touchstart', function(){
     $text.addClass('disabled');
     $wave.addClass('active');
-    mediaRec = new Media('recording.wav', captureSuccess, captureError);
+    mediaRec = new Media('recording1.wav', captureSuccess, captureError);
     mediaRec.startRecord();
   });
   $voice.on('touchend', function(){
     $text.removeClass('disabled');
     $wave.removeClass('active');
+    apiManager.executeCommand("test");
+    console.log("test");
     mediaRec.stopRecord();
     mediaRec.play();
-    // audioManager.uploadWav('recording.wav', function(speechCmd){
+    
+    // audioManager.uploadWav('recording1.wav', function(speechCmd){
     //   apiManager.executeCommand(speechCmd);
-    // });
+    // 
+
+    fileSystem.root.getFile("recording1.wav", null, function(entry){
+      console.log(entry);
+      entry.file(function(file){
+
+        var reader = new FileReader();
+        reader.onloadend = function(evt) {
+          console.log(evt.target.result);
+          //base = evt.target.result;
+        };
+        reader.readAsDataURL(file);
+
+      }, log('getting file from Entry'));
+    }, log('getting fileEntry: '));
+
   });
 
 
@@ -67,7 +94,11 @@ module.exports = function(){
 
   var textLength = 0;
 
-  $text.on('input', function(){
+  $text.on('keyup', function(e){
+    console.log(e);
+  });
+
+  $text.on('input', function(e){
     var str = "", val = $text.val();
     for(var i = 0; i < val.length; i++){
       if(val[i] !== '\n'){

@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/naman34/optimus_device",
   "dependencies": {
+    "bluebird": "^2.1.3",
     "browserify": "^4.1.11",
     "envify": "^1.2.1",
     "gulp": "^3.8.1",
