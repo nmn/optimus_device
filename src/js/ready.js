@@ -31,30 +31,32 @@ module.exports = function(){
   var $text = $('.text');
   var $wave = $('.wave');
   var $convo = $('.convo');
+  var $barcode = $('.barcode2');
 
   var mediaRec;
 
   window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, function(fs){fileSystem = fs;}, log('fileSystem'));
   
+  $barcode.on('touchstart', function(){
+    cordova.plugins.barcodeScanner.scan(
+      function (result) {
+        console.log("success:", result);
+        if(!result.cancelled){
+          // console.log("We got a barcode\n" +
+          //       "Result: " + result.text + "\n" +
+          //       "Format: " + result.format);
+          } 
+          setTimeout(function(){
+            speak("Uploading to freshbooks now");
+            navigator.notification.vibrate(100);
+          }, 100);
+      },
+      function (error) {
+        // alert("Scanning failed: " + error);
+      }
+    );
+  });
   $voice.on('touchstart', function(){
-    
-    // cordova.plugins.barcodeScanner.scan(
-    //   function (result) {
-    //     console.log("success:", result);
-    //     if(!result.cancelled){
-    //       console.log("We got a barcode\n" +
-    //             "Result: " + result.text + "\n" +
-    //             "Format: " + result.format);
-    //       } 
-    //       setTimeout(function(){
-    //         speechManager.speakText("Uploading to freshbooks now");
-    //       }, 100);
-    //   },
-    //   function (error) {
-    //     // alert("Scanning failed: " + error);
-    //   }
-    // );
-
     // navigator.device.capture.captureImage(
     //   function(mediaFiles) {
     //     //success
