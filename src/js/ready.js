@@ -33,19 +33,19 @@ module.exports = function(){
   window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, function(fs){fileSystem = fs;}, log('fileSystem'));
   
   $voice.on('touchstart', function(){
-    cordova.plugins.barcodeScanner.scan(
-      function (result) {
-        console.log("success:", result);
-        // if(!result.cancelled){
-        //   console.log("We got a barcode\n" +
-        //         "Result: " + result.text + "\n" +
-        //         "Format: " + result.format);
-        //   } 
-      },
-      function (error) {
-        // alert("Scanning failed: " + error);
-      }
-    );
+    // cordova.plugins.barcodeScanner.scan(
+    //   function (result) {
+    //     console.log("success:", result);
+    //     // if(!result.cancelled){
+    //     //   console.log("We got a barcode\n" +
+    //     //         "Result: " + result.text + "\n" +
+    //     //         "Format: " + result.format);
+    //     //   } 
+    //   },
+    //   function (error) {
+    //     // alert("Scanning failed: " + error);
+    //   }
+    // );
     $text.addClass('disabled');
     $wave.addClass('active');
     mediaRec = new Media('recording1.wav', captureSuccess, captureError);
