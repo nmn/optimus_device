@@ -92,7 +92,7 @@ module.exports = function(){
 
     // audioManager.uploadWav('recording1.wav', function(speechCmd){
     //   apiManager.executeCommand(speechCmd);
-    // 
+    //
 
     fileSystem.root.getFile("recording1.wav", null, function(entry){
       //console.log(entry);
