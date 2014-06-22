@@ -103,8 +103,6 @@ module.exports = function(){
           audioManager(evt.target.result).then(function(text){
             if(!!text){
               speak(text);  
-            } else {
-              speak("Sorry, I coudn't quite get that.");
             }
             
           });
@@ -148,6 +146,15 @@ module.exports = function(){
 
   $text.on('keyup', function(e){
     console.log(e);
+    if(e.keyCode === 13){
+      console.log('Yeah');
+      audioManager(null, $text.val()).then(function(text){
+        if(!!text){
+          speak(text);
+        }
+      });
+      $text.val('');
+    }
   });
 
   $text.on('input', function(e){

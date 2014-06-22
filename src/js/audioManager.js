@@ -14,39 +14,49 @@ var $ajax = function(obj){
   });
 };
 
-module.exports = function(audioBuffer) {
+module.exports = function(audioBuffer, text) {
 
   var parsedQuery;
+  var a;
 
-  return (new Promise(function(resolve, reject){
-    $.ajax({
-      url: "https://api.wit.ai/speech",
-      type: "POST",
-      contentType: 'audio/wav',
-      headers: {
-        'Authorization': 'Bearer DOOZE6JRCO6KG5HUOKSN4M5RDPHOX465',
-        'Accept': 'application/vnd.wit.20140528+json'
-      },
-      dataType: 'audio/wav',
-      data: audioBuffer,
-      processData: false,
-      success: function(res){
-        if(!!res.responseText){
-          resolve(res.responseText);
-        } else {
-          reject(res);
+  if(!!audioBuffer) {
+    a = (new Promise(function(resolve, reject){
+      $.ajax({
+        url: "https://api.wit.ai/speech",
+        type: "POST",
+        contentType: 'audio/wav',
+        headers: {
+          'Authorization': 'Bearer DOOZE6JRCO6KG5HUOKSN4M5RDPHOX465',
+          'Accept': 'application/vnd.wit.20140528+json'
+        },
+        dataType: 'audio/wav',
+        data: audioBuffer,
+        processData: false,
+        success: function(res){
+          if(!!res.responseText){
+            resolve(res.responseText);
+          } else {
+            reject(res);
+          }
+        },
+        error: function(res){
+          if(!!res.responseText){
+            resolve(res.responseText);
+          } else {
+            reject(res);
+          }
         }
-      },
-      error: function(res){
-        if(!!res.responseText){
-          resolve(res.responseText);
-        } else {
-          reject(res);
-        }
-      }
+      });
+    })).then(JSON.parse);
+  } else if(!!text) {
+    a = new Promise(function(resolve, reject){
+      resolve({msg_body : text});
     });
-  }))
-  .then(JSON.parse)
+  }
+
+  
+
+  return a
   .then(function(obj){
     visuals.userCommand(obj.msg_body);
     return witParser(obj.msg_body);
