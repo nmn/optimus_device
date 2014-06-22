@@ -80,20 +80,26 @@ function routeToAPI(resultObj){
   console.log("resultObj",resultObj);
   //Zendesk only gets
   if(!!resultObj.isZen){
+    console.log("hitting zen");
+    var url = server+'/zendesk';
+    console.log(url);
+
     return $ajax({
-      url: server+'/zendesk' + (!!resultObj.number) ? ('/' + resultObj.number) : '',
+      url: url,
       type: "GET",
     });
   }
 
   //Trello must create tasks and get tasks
-  if(resultObj.isTrello && resultObj.action === 'create'){
+  else if(resultObj.isTrello && resultObj.action === 'create'){
+    console.log("hitting trello:create");
     return $ajax({
       url: server+'/tasks',
       type: "POST",
       data: {listName:'basic', taskName:resultObj.subject},
     });
-  }else if(resultObj.isTrello === 'true' && resultObj.action === 'fetch'){
+  } else if(!!resultObj.isTrello && resultObj.action === 'fetch'){
+    console.log("hitting trello:fetch");
     return $ajax({
       url: server+'/tasks',
       type: "GET",
@@ -101,23 +107,28 @@ function routeToAPI(resultObj){
   }
 
   //Freshbook must post and get expenses and receipt
-  if(resultObj.intent ==='expense' && resultObj.action === 'create' && !!resultObj.number && !!resultObj.subject){
+  else if(resultObj.intent ==='expense' && resultObj.action === 'create' && !!resultObj.number && !!resultObj.subject){
+    console.log("hitting freshbooks:create");
     return $ajax({
       url: server+'/expenses',
       type: "POST",
       data: {amount:resultObj.number, notes:resultObj.subject},
     });
   }else if(resultObj.intent ==='expense' && resultObj.action === 'fetch'){
+    console.log("hitting freshbooks:fetch");
     return $ajax({
       url: server+'/expenses',
       type: "GET",
     });
   }
+  else {
+    return {
+      text: "Sorry, I couldn't quite get that.",
+      data: {}
+    };
+  }
 
-  return {
-    text: "Sorry, I couldn't quite get that.",
-    data: {}
-  };
+  
 
   //routes need to be added:
   // if(resultObj.intent ==='receipt' && resultObj.action === 'create'){

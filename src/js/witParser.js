@@ -13,7 +13,8 @@ var containsAny = function(array, words){
 
 module.exports = function(witString){
     var resultObj = {};
-    var words = witString.split(" ");
+
+    var words = witString.toLowerCase().split(" ");
     console.log("words",words);
 
     isZen(words, resultObj);
@@ -32,7 +33,7 @@ function isZen(words, resultObj){
 };
 
 function isTrello(words, resultObj){
-  var trelloStrings = ['tasks', 'task', 'lists', 'boards', 'cards', 'trello'];
+  var trelloStrings = ['tasks', 'task', 'list', 'lists', 'boards', 'card', 'cards', 'car', 'yellow', 'trello', 'hello'];
   resultObj.isTrello = containsAny(words, trelloStrings);
 };
 
