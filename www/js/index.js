@@ -9195,10 +9195,11 @@ var speechManager = require("./speechManager");
 
 exports.executeCommand = function (speechStr){
   console.log("Command:", speechStr);
-  speechManager.speakText("I'm alive!!!! Motherfucker");
+  speechManager.speakText("Successfully executed command");
 };
 },{"./speechManager":6}],3:[function(require,module,exports){
 var onDeviceReady = require('./ready.js');
+
 document.addEventListener('deviceready', onDeviceReady, false);
 },{"./ready.js":5}],4:[function(require,module,exports){
 exports.uploadWav = function(audioURI, cb) {
@@ -9240,6 +9241,8 @@ exports.uploadWav = function(audioURI, cb) {
 var $ = require('jquery');
 var audioManager = require('./audioManager');
 var apiManager = require('./apiManager');
+var speechManager = require('./speechManager');
+
 
 var captureSuccess = function(mediaFiles) {
   console.log('success', arguments);
@@ -9250,19 +9253,29 @@ var captureError = function(error) {
   console.log('fail', arguments);
 };
 
+var log = function(){
+  var args = Array.prototype.slice.call(arguments);
+  return function(){
+    console.log.apply(console, args.concat(Array.prototype.slice.call(arguments)));
+  };
+};
 
 module.exports = function(){
+
+  var fileSystem;
 
   var $voice = $('.voice');
   var $text = $('.text');
   var $wave = $('.wave');
 
   var mediaRec;
+
+  window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, function(fs){fileSystem = fs;}, log('fileSystem'));
   
   $voice.on('touchstart', function(){
     $text.addClass('disabled');
     $wave.addClass('active');
-    mediaRec = new Media('recording.wav', captureSuccess, captureError);
+    mediaRec = new Media('recording1.wav', captureSuccess, captureError);
     mediaRec.startRecord();
   });
   $voice.on('touchend', function(){
@@ -9270,10 +9283,26 @@ module.exports = function(){
     $wave.removeClass('active');
     mediaRec.stopRecord();
     mediaRec.play();
-    // audioManager.uploadWav('recording.wav', function(speechCmd){
+    // audioManager.uploadWav('recording1.wav', function(speechCmd){
     //   apiManager.executeCommand(speechCmd);
-    // });
+    // 
+
+    fileSystem.root.getFile("recording1.wav", null, function(entry){
+      console.log(entry);
+      entry.file(function(file){
+
+        var reader = new FileReader();
+        reader.onloadend = function(evt) {
+          console.log(evt.target.result);
+          //base = evt.target.result;
+        };
+        reader.readAsDataURL(file);
+
+      }, log('getting file from Entry'));
+    }, log('getting fileEntry: '));
+
   });
+
 
   $text.on('touchend', function(e){
     if($text.hasClass('moveup')){
@@ -9298,12 +9327,15 @@ module.exports = function(){
     $text.removeClass('moveup');
     $voice.removeClass('moveup');
     $wave.removeClass('moveup');
-
   });
 
   var textLength = 0;
 
-  $text.on('input', function(){
+  $text.on('keyup', function(e){
+    console.log(e);
+  });
+
+  $text.on('input', function(e){
     var str = "", val = $text.val();
     for(var i = 0; i < val.length; i++){
       if(val[i] !== '\n'){
@@ -9355,8 +9387,16 @@ module.exports = function(){
 
 
 
-},{"./apiManager":2,"./audioManager":4,"jquery":1}],6:[function(require,module,exports){
+},{"./apiManager":2,"./audioManager":4,"./speechManager":6,"jquery":1}],6:[function(require,module,exports){
 exports.speakText = function(str){
   console.log("Speak:", str);
+  var successCb = function(e){
+    console.log("success:", e);
+  };
+  var failCb = function(e){
+    console.log("fail:", e);
+  };
+  var mediaRec = new Media(encodeURI('http://tts-api.com/tts.mp3?q='+str), successCb, failCb);
+  mediaRec.play();
 };
 },{}]},{},[3])
