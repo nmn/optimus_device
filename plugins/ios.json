@@ -107,6 +107,10 @@
                         {
                             "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MWPhotoBrowserCordova\"><param name=\"ios-package\" value=\"MWPhotoBrowserCordova\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -136,6 +140,9 @@
             "PACKAGE_NAME": "com.namangoel.hello"
         },
         "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.namangoel.hello"
+        },
+        "com.wunwun.plugins.mw-photo-browser-cordova": {
             "PACKAGE_NAME": "com.namangoel.hello"
         }
     },
