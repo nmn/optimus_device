@@ -1,7 +1,7 @@
 var $ = require('jquery');
 var audioManager = require('./audioManager');
-var apiManager = require('./apiManager');
-var speechManager = require('./speechManager');
+//var apiManager = require('./apiManager');
+//var speechManager = require//('./speechManager');
 
 
 var captureSuccess = function(mediaFiles) {
@@ -41,25 +41,26 @@ module.exports = function(){
   $voice.on('touchend', function(){
     $text.removeClass('disabled');
     $wave.removeClass('active');
-    apiManager.executeCommand("test");
-    console.log("test");
+    //apiManager.executeCommand("test");
+    //console.log("test");
     mediaRec.stopRecord();
     mediaRec.play();
-    
+
     // audioManager.uploadWav('recording1.wav', function(speechCmd){
     //   apiManager.executeCommand(speechCmd);
     // 
 
     fileSystem.root.getFile("recording1.wav", null, function(entry){
-      console.log(entry);
+      //console.log(entry);
       entry.file(function(file){
 
         var reader = new FileReader();
         reader.onloadend = function(evt) {
-          console.log(evt.target.result);
+          //console.log(evt.target.result);
           //base = evt.target.result;
+          audioManager(evt.target.result);
         };
-        reader.readAsDataURL(file);
+        reader.readAsArrayBuffer(file);
 
       }, log('getting file from Entry'));
     }, log('getting fileEntry: '));
