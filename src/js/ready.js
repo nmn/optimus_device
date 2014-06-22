@@ -2,6 +2,9 @@ var $ = require('jquery');
 var audioManager = require('./audioManager');
 //var apiManager = require('./apiManager');
 var speak = require('./speechManager');
+var speechManager = require('./speechManager');
+var PhotoBrowser = require('./PhotoBrowser');
+
 
 
 var captureSuccess = function(mediaFiles) {
@@ -34,14 +37,18 @@ module.exports = function(){
   window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, function(fs){fileSystem = fs;}, log('fileSystem'));
   
   $voice.on('touchstart', function(){
+    
     // cordova.plugins.barcodeScanner.scan(
     //   function (result) {
     //     console.log("success:", result);
-    //     // if(!result.cancelled){
-    //     //   console.log("We got a barcode\n" +
-    //     //         "Result: " + result.text + "\n" +
-    //     //         "Format: " + result.format);
-    //     //   } 
+    //     if(!result.cancelled){
+    //       console.log("We got a barcode\n" +
+    //             "Result: " + result.text + "\n" +
+    //             "Format: " + result.format);
+    //       } 
+    //       setTimeout(function(){
+    //         speechManager.speakText("Uploading to freshbooks now");
+    //       }, 100);
     //   },
     //   function (error) {
     //     // alert("Scanning failed: " + error);
@@ -51,12 +58,17 @@ module.exports = function(){
     // navigator.device.capture.captureImage(
     //   function(mediaFiles) {
     //     //success
-    //       for (var i = 0; i < mediaFiles.length; i++) {
-    //           var path = mediaFiles[i].fullPath;
-    //           alert(path);
-    //           // do something interesting with the file
-    //       }
-    //    }, 
+    //     var path = mediaFiles[0].fullPath;
+    //     var images = [path, "http://i.imgur.com/YuevqGg.jpg", "http://i.imgur.com/I4mg55K.jpg"];
+    //     setTimeout(function(){
+    //       PhotoBrowser.showGallery({index:0, images:images}, function(){
+    //         setTimeout(function(){
+    //           alert("uploaded receipt to freshbooks!");
+    //         }, 550);
+    //       });
+    //     }, 550);
+    //     // do something interesting with the file
+    //   }, 
     //   function(error) {
     //     //error
     //       navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
@@ -71,8 +83,8 @@ module.exports = function(){
   $voice.on('touchend', function(){
     $text.removeClass('disabled');
     $wave.removeClass('active');
-    //apiManager.executeCommand("test");
-    //console.log("test");
+    // //apiManager.executeCommand("test");
+    // //console.log("test");
     mediaRec.stopRecord();
     //mediaRec.play();
 

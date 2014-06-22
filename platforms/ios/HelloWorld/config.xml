@@ -43,6 +43,9 @@
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
+    <feature name="MWPhotoBrowserCordova">
+        <param name="ios-package" value="MWPhotoBrowserCordova" />
+    </feature>
     <name>HelloWorld</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

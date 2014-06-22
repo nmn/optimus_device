@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="com.wunwun.plugins.mw-photo-browser-cordova"
+      version="1.0.0">
+
+  <name>MWPhotoBrowserCordova</name>
+  <author>Calvin Lai</author>
+  <description>Port of MWPhotoBrowser to Cordova.</description>
+
+  <js-module src="www/mw-photo-browser.js" name="MWPhotoBrowserCordova">
+    <clobbers target="plugins.mwPhotoBrowser" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="MWPhotoBrowserCordova">
+        <param name="ios-package" value="MWPhotoBrowserCordova" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/MWPhotoBrowserCordova.h" />
+    <source-file src="src/ios/MWPhotoBrowserCordova.m" />
+  </platform>
+
+</plugin>
