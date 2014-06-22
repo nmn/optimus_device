@@ -41,8 +41,11 @@ module.exports = function(){
   $voice.on('touchend', function(){
     $text.removeClass('disabled');
     $wave.removeClass('active');
+    apiManager.executeCommand("test");
+    console.log("test");
     mediaRec.stopRecord();
     mediaRec.play();
+    
     // audioManager.uploadWav('recording1.wav', function(speechCmd){
     //   apiManager.executeCommand(speechCmd);
     // 
