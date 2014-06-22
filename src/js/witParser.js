@@ -1,100 +1,83 @@
 var Promise = require('bluebird');
-var resultObj = {};
+
+var containsAny = function(array, words){
+  var rt = false;
+  for(var i = 0; i < words.length; i++){
+    if(array.indexOf(words[i]) !== -1){
+      return true;
+    }
+  }
+  return false;
+};
+
 
 module.exports = function(witString){
+    var resultObj = {};
     var words = witString.split(" ");
     console.log("words",words);
 
-    isZen(words);
-    isTrello(words);
-    getIntent(words);
-    getAction(words);
-    getSubject(words);
-    getNum(words);
+    isZen(words, resultObj);
+    isTrello(words, resultObj);
+    getIntent(words, resultObj);
+    getAction(words, resultObj);
+    getSubject(words, resultObj);
+    getNum(words, resultObj);
 
     return resultObj;
 };
 
-function isZen(words){
-  var zenStrings = ['ticket', 'question', 'customer','service','help','request'];
-
-  for (var i = 0; i < words.length; i++) {
-    if(zenStrings.indexOf(words[i]) !== -1){
-      resultObj.isZen = 'true';
-    }
-  };
-
-  resultObj.isZen = resultObj.isZen || 'false';
-
+function isZen(words, resultObj){
+  var zenStrings = ['zen','ticket','tickets', 'question', 'customer','service','help','request'];
+  resultObj.isZen = containsAny(words, zenStrings);
 };
 
-function isTrello(words){
-  var trelloStrings = ['tasks', 'task', 'lists', 'boards', 'cards'];
-
-  for (var i = 0; i < words.length; i++) {
-    if(trelloStrings.indexOf(words[i]) !== -1){
-      resultObj.isTrello = 'true';
-    }
-  };
-
-  resultObj.isTrello = resultObj.isTrello || 'false';
-
+function isTrello(words, resultObj){
+  var trelloStrings = ['tasks', 'task', 'lists', 'boards', 'cards', 'trello'];
+  resultObj.isTrello = containsAny(words, trelloStrings);
 };
 
-function getIntent(words){
+function getIntent(words, resultObj){
   var expenseStrings = ['expense','expenses', 'expenditure', 'paid', 'debit'];
   var creditStrings = ['earned', 'received', 'got', 'credit'];
 
-  for (var i = 0; i < words.length; i++) {
-    if(expenseStrings.indexOf(words[i]) !== -1){
-      resultObj.intent = "expense";
-    }
-  };
-
-  resultObj.intent = resultObj.intent || "receipt";
-
+  resultObj.intent = containsAny(words, expenseStrings) ? 'expense' :
+                     containsAny(words, creditStrings) ? 'receipt' : null;
 };
 
-function getAction(words){
+function getAction(words, resultObj){
   var newStrings = ['create', 'new', 'add'];
-  var fetchStrings = ['show', 'how', 'what', 'fetch'];
+  var fetchStrings = ['show', 'how', 'what', 'get', 'fetch'];
 
-  for (var i = 0; i < words.length; i++) {
-    if(newStrings.indexOf(words[i]) !== -1){
-      resultObj.action = "create";
-    }
-  };
+  resultObj.action = containsAny(words, newStrings) ? 'create' :
+                     containsAny(words, fetchStrings) ? 'fetch' : null;
 
-  resultObj.action = resultObj.action || "fetch";
+}
 
-};
-
-function getNum(words){
+function getNum(words, resultObj){
   for (var i = 0; i < words.length; i++) {
     var cleanWord = words[i].replace("$"," ");
 
     if(!isNaN(parseInt(cleanWord,10))){
-      resultObj.number = parseInt(cleanWord,10)
+      resultObj.number = parseInt(cleanWord, 10);
     }
-  };
-
-  if(resultObj.action === "fetch" && !resultObj.number){
-    resultObj.number = 10;
   }
 
-};
+  // if(resultObj.action === "fetch" && !resultObj.number){
+  //   resultObj.number = 10;
+  // }
 
-function getSubject(words){
+}
+
+function getSubject(words, resultObj){
   var subjectStrings = ['for', 'on', 'to'];
   var subject = "";
 
-  for (var i = 0; i < words.length; i++) {
-    if(subjectStrings.indexOf(words[i]) !== -1){
-      for (var j = i+1; j < words.length; j++) {
-        subject = subject.concat(words[j]+" ");
-      };
-    }
-  };
+  var i = 0;
 
-  resultObj.subject = subject;
-};
+  for(var i = 0; i < subjectStrings.length; i++){
+    var x = words.lastIndexOf(subjectStrings[i]);
+    if(x > i) i = x;
+  }
+
+  resultObj.subject = (i >= 1)? words.slice(i+1, words.length - i - 1).join(' ') : null;
+}

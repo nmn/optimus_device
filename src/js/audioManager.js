@@ -73,7 +73,7 @@ function routeToAPI(resultObj){
   //Zendesk only gets
   if(resultObj.isZen === 'true'){
     return $ajax({
-      url: server+'/zendesk',
+      url: server+'/zendesk' + (!!resultObj.number) ? ('/' + resultObj.number) : '',
       type: "GET",
     });
   }
@@ -92,8 +92,8 @@ function routeToAPI(resultObj){
     });
   }
 
-  //Freebook must post and get expenses and receipt
-  if(resultObj.intent ==='expense' && resultObj.action === 'create'){
+  //Freshbook must post and get expenses and receipt
+  if(resultObj.intent ==='expense' && resultObj.action === 'create' && !!resultObj.number && !!resultObj.subject){
     return $ajax({
       url: server+'/expenses',
       type: "POST",
@@ -105,6 +105,11 @@ function routeToAPI(resultObj){
       type: "GET",
     });
   }
+
+  return {
+    text: "I couldn't quite get that. Sorry, but I was born like yesterday. I'm still learning the language.",
+    data: {}
+  };
 
   //routes need to be added:
   // if(resultObj.intent ==='receipt' && resultObj.action === 'create'){
