@@ -6,6 +6,14 @@ var $ = require('jquery');
 
 var server = "http://localhost:3000";
 
+var $ajax = function(obj){
+  return new Promise(function(resolve, reject){
+    obj.success = resolve;
+    obj.error = reject;
+    $.ajax(obj);
+  });
+}
+
 module.exports = function(audioBuffer) {
 
   return (new Promise(function(resolve, reject){
@@ -36,19 +44,12 @@ module.exports = function(audioBuffer) {
       }
     });
   }))
+  .then(JSON.parse)
   .then(function(obj){
-    // add function here...
-    console.log("wtf",obj);
-    console.log("objj", obj.msg_body);
-
     return witParser(obj.msg_body);
-
   })
   .then(function(resultObj){
-    console.log("obj",resultObj);
-    return new Promise(function(resolve,reject){
-      resolve(routeToAPI(resultObj));
-    });
+    return routeToAPI(resultObj);
   })
   .then(function(res){
     console.log("res",res);
@@ -62,48 +63,16 @@ module.exports = function(audioBuffer) {
 function routeToAPI(resultObj){
   switch(resultObj.action){
     case 'create':
-      return (new Promise(function(resolve, reject){
-        $.ajax({
+      return $ajax({
           url: server+'/expenses',
           type: "POST",
-          data: {category_id:33 },
-          success: function(res){
-            if(!!res){
-              resolve(res);
-            } else {
-              reject(res);
-            }
-          },
-          error: function(res){
-            if(!!res.responseText){
-              resolve(res.responseText);
-            } else {
-              reject(res);
-            }
-          }
+          data: {category_id:resultObj.subject, amount:resultObj.number },
         });
-      }))
     case 'fetch':
-    return (new Promise(function(resolve, reject){
-      $.ajax({
+    return $ajax({
         url: server+'/expenses',
         type: "GET",
-        success: function(res){
-          if(!!res){
-            resolve(res);
-          } else {
-            reject(res);
-          }
-        },
-        error: function(res){
-          if(!!res.responseText){
-            resolve(res.responseText);
-          } else {
-            reject(res);
-          }
-        }
       });
-    }))
     default : console.log("there was an error sending to APIs");
   }
 

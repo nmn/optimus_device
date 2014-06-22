@@ -2,10 +2,6 @@ var Promise = require('bluebird');
 var resultObj = {};
 
 module.exports = function(witString){
-console.log("string", witString);
-  return new Promise(function(resolve, reject){
-
-    witString = "I got $40 for pizza";
 
     var words = witString.split(" ");
 
@@ -14,8 +10,7 @@ console.log("string", witString);
     getSubject(words);
     getNum(words);
 
-    resolve(resultObj);
-  });
+    return resultObj;
 
 };
 
