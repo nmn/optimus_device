@@ -3,6 +3,7 @@ var witParser = require('./witParser.js');
 
 var reqwest = require('reqwest');
 var $ = require('jquery');
+
 var server = "http://localhost:3000";
 
 module.exports = function(audioBuffer) {
