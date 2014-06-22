@@ -1,8 +1,9 @@
 var $ = require("jquery");
+var Promise = require("bluebird");
 
 var Trello = function(key, token){
   var apiUrl = "https://api.trello.com";
-  this.get = function(route, options, cb){
+  var ajax = function(route, options, cb, ajaxType){
     options = options || {};
     cb = cb || function(){};
     if(typeof(options) === "function"){
@@ -21,7 +22,7 @@ var Trello = function(key, token){
     console.log("GET:", apiUrl+route+"?"+str);
     $.ajax({
       url:apiUrl+route+"?"+str,
-      type:"GET",
+      type:ajaxType,
       success: function(data, textStatus, jqXHR){
         cb(null, data);
       },
@@ -30,5 +31,26 @@ var Trello = function(key, token){
       }
     });
   };
+  this.get = function(route, options, cb){
+    return new Promise(function (resolve, reject) {
+      ajax(route, options, function(err, data){
+        if(err){
+          reject(err);
+        }
+        resolve(data);
+      }, "GET");
+    });
+  };
+  this.post = function(route, options, cb){
+    return new Promise(function (resolve, reject) {
+      ajax(route, options, function(err, data){
+        if(err){
+          reject(err);
+        }
+        resolve(data);
+      }, "POST");
+    });
+  };
+
 };
 module.exports = Trello;
