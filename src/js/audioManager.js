@@ -59,6 +59,10 @@ module.exports = function(audioBuffer) {
     $('.content').append('<p>' + res.text + '</p>');
     if((parsedQuery.intent === 'expense' || parsedQuery.intent === 'receipt') && parsedQuery.action === 'fetch'){
       visuals.listExpenses(res.text, res.data);
+    } else if(!!parsedQuery.isZen){
+      visuals.showTickets(res.text, res.data);
+    } else if(parsedQuery.isTrello && parsedQuery.action === 'fetch'){
+      //
     }
     console.log("res",res);
     return res.text;
@@ -75,7 +79,7 @@ module.exports = function(audioBuffer) {
 function routeToAPI(resultObj){
   console.log("resultObj",resultObj);
   //Zendesk only gets
-  if(resultObj.isZen === 'true'){
+  if(!!resultObj.isZen){
     return $ajax({
       url: server+'/zendesk' + (!!resultObj.number) ? ('/' + resultObj.number) : '',
       type: "GET",
@@ -83,7 +87,7 @@ function routeToAPI(resultObj){
   }
 
   //Trello must create tasks and get tasks
-  if(resultObj.isTrello === 'true' && resultObj.action === 'create'){
+  if(resultObj.isTrello && resultObj.action === 'create'){
     return $ajax({
       url: server+'/tasks',
       type: "POST",

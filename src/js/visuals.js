@@ -19,3 +19,13 @@ module.exports.listExpenses = function(text, data){
   $convoContent.append(div);
   document.querySelector('.content').scrollTop = 9999;
 };
+
+module.exports.showTickets = function(text, data){
+  var div = document.createElement('div');
+
+  React.renderComponent(reactmodules.Tickets({text:text, data:data}), div);
+  
+  $convoContent = $('.convo .content');
+  $convoContent.append(div);
+  document.querySelector('.content').scrollTop = 9999;
+};
