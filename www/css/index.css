@@ -44,11 +44,24 @@ body {
 }
 .app .text {
   left: 0;
-  background-color: #7aff00;
+  background-color: #00c41f;
   background-image: url("../img/text.svg");
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 .app .wave {
   left: 0;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 .app .wave::before {
   content: '';
@@ -56,7 +69,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 320px;
+  width: 640px;
   bottom: 0;
   background-repeat: repeat;
   background-image: url("../img/wave.svg");
@@ -85,15 +98,56 @@ body {
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+.app .wave.active {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
 .app .voice {
   right: 0;
   background-color: #18cae6;
   background-image: url("../img/mic.svg");
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
 }
 .app .text.disabled {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+}
+.app .text.moveup,
+.app .voice.moveup,
+.app .wave.moveup {
+  -webkit-transform: translateY(-260px);
+  -moz-transform: translateY(-260px);
+  -o-transform: translateY(-260px);
+  -ms-transform: translateY(-260px);
+  transform: translateY(-260px);
+}
+.app textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  font-size: 1.6rem;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  padding: 0.5rem;
+  color: transparent;
+  word-wrap: break-word;
+}
+.app textarea:focus {
+  background: rgba(0,0,0,0.5);
+  width: 260px;
+  color: #00c41f;
+}
+.app textarea:focus ~ .voice {
+  width: 60px;
 }
 h1 {
   position: fixed;
