@@ -9191,10 +9191,18 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
+var speechManager = require("./speechManager");
+
+exports.executeCommand = function (speechStr){
+  console.log("Command:", speechStr);
+  speechManager.speakText("I'm alive!!!! Motherfucker");
+};
+},{"./speechManager":6}],3:[function(require,module,exports){
 var onDeviceReady = require('./ready.js');
+
 document.addEventListener('deviceready', onDeviceReady, false);
-},{"./ready.js":4}],3:[function(require,module,exports){
-exports.uploadWav = function(audioURI) {
+},{"./ready.js":5}],4:[function(require,module,exports){
+exports.uploadWav = function(audioURI, cb) {
     var options = new FileUploadOptions();
     options.fileKey = "file";
     options.fileName = audioURI.substr(audioURI.lastIndexOf('/')+1);
@@ -9209,24 +9217,32 @@ exports.uploadWav = function(audioURI) {
     console.log("URI:", options.fileName);
 
     var ft = new FileTransfer();
-    ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), win, fail, options);
+    var successCb = function(r) {
+        console.log("Code = " + r.responseCode);
+        console.log("Response = " + r.response);
+        console.log("Sent = " + r.bytesSent);
+        cb("Sample Text");
+    };
+    var failCb = function(error) {
+        alert("An error has occurred: Code = " + error.code);
+        console.log("upload error source " + error.source);
+        console.log("upload error target " + error.target);
+    };
+
+    ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), successCb, failCb, options);
+
+   
 };
 
-var win = function(r) {
-    console.log("Code = " + r.responseCode);
-    console.log("Response = " + r.response);
-    console.log("Sent = " + r.bytesSent);
-};
 
-var fail = function(error) {
-    alert("An error has occurred: Code = " + error.code);
-    console.log("upload error source " + error.source);
-    console.log("upload error target " + error.target);
-};
 
-},{}],4:[function(require,module,exports){
-var $ = require("jquery");
-var audioManager = require("./audioManager");
+
+},{}],5:[function(require,module,exports){
+var $ = require('jquery');
+var audioManager = require('./audioManager');
+var apiManager = require('./apiManager');
+var speechManager = require('./speechManager');
+
 
 var captureSuccess = function(mediaFiles) {
   console.log('success', arguments);
@@ -9239,20 +9255,35 @@ var captureError = function(error) {
 
 
 module.exports = function(){
-  console.log("TEST:",$(".voice")[0]);
-  var mediaRec = new Media('recording.wav', captureSuccess, captureError);
+  console.log('TEST:',$('.voice')[0]);
+  // var mediaRec = new Media('recording.wav', captureSuccess, captureError);
   
-  $(".voice").on("touchstart", function(){
-    mediaRec.startRecord();
+  $('.voice').on('touchstart', function(){
+    // mediaRec.startRecord();
   });
-  $(".voice").on("touchend", function(){
-    mediaRec.stopRecord();
-    mediaRec.play();
-    audioManager.uploadWav("recording.wav");
+  $('.voice').on('touchend', function(){
+    // mediaRec.stopRecord();
+    // mediaRec.play();
+    speechManager.speakText("I don't know who you are. I don't know what you want. If you are looking for ransom, I can tell you I don't have money. But what I do have are a very particular set of skills, skills I have acquired over a very long career. Skills that make me a nightmare for people like you. If you let my daughter go now, that'll be the end of it. I will not look for you, I will not pursue you. But if you don't, I will look for you, I will find you, and I will kill you.");
+    // audioManager.uploadWav('recording.wav', function(speechCmd){
+    //   apiManager.executeCommand(speechCmd);
+    // });
   });
 };
 
 
 
 
-},{"./audioManager":3,"jquery":1}]},{},[2])
+},{"./apiManager":2,"./audioManager":4,"./speechManager":6,"jquery":1}],6:[function(require,module,exports){
+exports.speakText = function(str){
+  console.log("Speak:", str);
+  var successCb = function(e){
+    console.log("success:", e);
+  };
+  var failCb = function(e){
+    console.log("fail:", e);
+  };
+  var mediaRec = new Media(encodeURI('http://tts-api.com/tts.mp3?q='+str), successCb, failCb);
+  mediaRec.play();
+};
+},{}]},{},[3])

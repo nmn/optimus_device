@@ -53,3 +53,397 @@ You could find it at the following address https://developer.apple.com/icloud/do
 }
 2014-06-21 15:41:14.370 HelloWorld[8511:70b] Finished playing audio sample 'recording.wav'
 2014-06-21 15:41:17.086 HelloWorld[8511:70b] THREAD WARNING: ['FileTransfer'] took '3826.276123' ms. Plugin should use a background thread.
+2014-06-21 15:58:20.256 HelloWorld[8905:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 15:58:20.264 HelloWorld[8905:70b] Unlimited access to network resources
+2014-06-21 15:58:20.267 HelloWorld[8905:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 15:58:20.285 HelloWorld[8905:70b] [CDVTimer][file] 1.744032ms
+2014-06-21 15:58:20.286 HelloWorld[8905:70b] [CDVTimer][TotalPluginStartup] 2.382994ms
+2014-06-21 15:58:20.331 HelloWorld[8905:70b] Resetting plugins due to page load.
+2014-06-21 15:58:20.382 HelloWorld[8905:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+Terminating in response to SpringBoard's termination.
+2014-06-21 16:00:07.022 HelloWorld[9068:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:00:07.035 HelloWorld[9068:70b] Unlimited access to network resources
+2014-06-21 16:00:07.039 HelloWorld[9068:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:00:07.064 HelloWorld[9068:70b] [CDVTimer][file] 2.529979ms
+2014-06-21 16:00:07.065 HelloWorld[9068:70b] [CDVTimer][TotalPluginStartup] 3.668010ms
+2014-06-21 16:00:07.237 HelloWorld[9068:70b] Resetting plugins due to page load.
+2014-06-21 16:00:07.320 HelloWorld[9068:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:00:10.957 HelloWorld[9068:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:00:10.958 HelloWorld[9068:70b] THREAD WARNING: ['Media'] took '370.485596' ms. Plugin should use a background thread.
+2014-06-21 16:00:12.645 HelloWorld[9068:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:00:12.663 HelloWorld[9068:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:00:12.676 HelloWorld[9068:70b] THREAD WARNING: ['Media'] took '28.833984' ms. Plugin should use a background thread.
+2014-06-21 16:00:12.677 HelloWorld[9068:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:00:12.695 HelloWorld[9068:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xa382c20 {NSFilePath=recording.wav, NSUnderlyingError=0xa35e1a0 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:00:12.696 HelloWorld[9068:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:00:14.347 HelloWorld[9068:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 16:00:14.452 HelloWorld[9068:70b] THREAD WARNING: ['FileTransfer'] took '1774.573975' ms. Plugin should use a background thread.
+2014-06-21 16:00:25.560 HelloWorld[9068:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:00:25.562 HelloWorld[9068:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:00:27.753 HelloWorld[9068:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:00:27.755 HelloWorld[9068:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:00:27.777 HelloWorld[9068:70b] THREAD WARNING: ['Media'] took '21.746094' ms. Plugin should use a background thread.
+2014-06-21 16:00:27.778 HelloWorld[9068:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:00:27.791 HelloWorld[9068:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xa42be90 {NSFilePath=recording.wav, NSUnderlyingError=0xa44a9b0 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:00:27.791 HelloWorld[9068:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:00:29.447 HelloWorld[9068:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 16:00:30.121 HelloWorld[9068:70b] THREAD WARNING: ['FileTransfer'] took '2342.252930' ms. Plugin should use a background thread.
+2014-06-21 16:39:11.347 HelloWorld[9618:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:39:11.363 HelloWorld[9618:70b] Unlimited access to network resources
+2014-06-21 16:39:11.367 HelloWorld[9618:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:39:11.395 HelloWorld[9618:70b] [CDVTimer][file] 2.744973ms
+2014-06-21 16:39:11.396 HelloWorld[9618:70b] [CDVTimer][TotalPluginStartup] 3.409982ms
+2014-06-21 16:39:11.564 HelloWorld[9618:70b] Resetting plugins due to page load.
+2014-06-21 16:39:11.668 HelloWorld[9618:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:39:12.322 HelloWorld[9618:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:39:12.323 HelloWorld[9618:70b] THREAD WARNING: ['Media'] took '191.000000' ms. Plugin should use a background thread.
+2014-06-21 16:39:12.327 HelloWorld[9618:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:39:12.355 HelloWorld[9618:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xadc1b20 {NSFilePath=recording.wav, NSUnderlyingError=0xadb9210 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:39:12.357 HelloWorld[9618:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:39:12.397 HelloWorld[9618:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:39:14.275 HelloWorld[9618:70b] THREAD WARNING: ['FileTransfer'] took '1945.435059' ms. Plugin should use a background thread.
+2014-06-21 16:40:31.579 HelloWorld[9783:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:40:31.588 HelloWorld[9783:70b] Unlimited access to network resources
+2014-06-21 16:40:31.591 HelloWorld[9783:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:40:31.607 HelloWorld[9783:70b] [CDVTimer][file] 1.366973ms
+2014-06-21 16:40:31.608 HelloWorld[9783:70b] [CDVTimer][TotalPluginStartup] 1.923025ms
+2014-06-21 16:40:31.686 HelloWorld[9783:70b] Resetting plugins due to page load.
+2014-06-21 16:40:31.750 HelloWorld[9783:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:40:55.563 HelloWorld[9942:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:40:55.575 HelloWorld[9942:70b] Unlimited access to network resources
+2014-06-21 16:40:55.581 HelloWorld[9942:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:40:55.606 HelloWorld[9942:70b] [CDVTimer][file] 2.462983ms
+2014-06-21 16:40:55.606 HelloWorld[9942:70b] [CDVTimer][TotalPluginStartup] 3.112018ms
+2014-06-21 16:40:55.792 HelloWorld[9942:70b] Resetting plugins due to page load.
+2014-06-21 16:40:55.871 HelloWorld[9942:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:40:58.491 HelloWorld[9942:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:40:58.492 HelloWorld[9942:70b] THREAD WARNING: ['Media'] took '62.839844' ms. Plugin should use a background thread.
+2014-06-21 16:40:58.539 HelloWorld[9942:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:40:58.553 HelloWorld[9942:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xaa40050 {NSFilePath=recording.wav, NSUnderlyingError=0xaa42150 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:40:58.554 HelloWorld[9942:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:40:58.574 HelloWorld[9942:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:41:00.483 HelloWorld[9942:70b] THREAD WARNING: ['FileTransfer'] took '1942.663086' ms. Plugin should use a background thread.
+2014-06-21 16:41:14.592 HelloWorld[9942:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:41:14.594 HelloWorld[9942:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:41:14.723 HelloWorld[9942:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:41:14.732 HelloWorld[9942:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:41:14.733 HelloWorld[9942:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:41:14.747 HelloWorld[9942:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xab6bef0 {NSFilePath=recording.wav, NSUnderlyingError=0xab4bd00 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:41:14.747 HelloWorld[9942:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:41:16.524 HelloWorld[9942:70b] THREAD WARNING: ['FileTransfer'] took '1789.437988' ms. Plugin should use a background thread.
+2014-06-21 16:41:48.347 HelloWorld[10232:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:41:48.361 HelloWorld[10232:70b] Unlimited access to network resources
+2014-06-21 16:41:48.365 HelloWorld[10232:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:41:48.388 HelloWorld[10232:70b] [CDVTimer][file] 2.393007ms
+2014-06-21 16:41:48.389 HelloWorld[10232:70b] [CDVTimer][TotalPluginStartup] 3.045976ms
+2014-06-21 16:41:48.577 HelloWorld[10232:70b] Resetting plugins due to page load.
+2014-06-21 16:41:48.689 HelloWorld[10232:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:42:05.453 HelloWorld[10232:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:42:05.455 HelloWorld[10232:70b] THREAD WARNING: ['Media'] took '163.527100' ms. Plugin should use a background thread.
+2014-06-21 16:42:05.589 HelloWorld[10232:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:42:05.598 HelloWorld[10232:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:42:05.602 HelloWorld[10232:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:42:05.618 HelloWorld[10232:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xab6ddf0 {NSFilePath=recording.wav, NSUnderlyingError=0xab69d20 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:42:05.619 HelloWorld[10232:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:42:05.744 HelloWorld[10232:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 16:42:07.711 HelloWorld[10232:70b] THREAD WARNING: ['FileTransfer'] took '2106.795898' ms. Plugin should use a background thread.
+2014-06-21 16:42:09.922 HelloWorld[10232:70b] Started recording audio sample 'recording.wav'
+2014-06-21 16:42:09.923 HelloWorld[10232:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:42:09.983 HelloWorld[10232:70b] Stopped recording audio sample 'recording.wav'
+2014-06-21 16:42:09.984 HelloWorld[10232:70b] Playing audio sample 'recording.wav'
+2014-06-21 16:42:09.993 HelloWorld[10232:70b] Finished recording audio sample 'recording.wav'
+2014-06-21 16:42:10.014 HelloWorld[10232:70b] Error opening file recording.wav: Error Domain=NSCocoaErrorDomain Code=260 "The operation couldn’t be completed. (Cocoa error 260.)" UserInfo=0xab5f8b0 {NSFilePath=recording.wav, NSUnderlyingError=0xab5d5d0 "The operation couldn’t be completed. No such file or directory"}
+2014-06-21 16:42:10.015 HelloWorld[10232:70b] FileTransferError {
+    code = 1;
+    source = "recording.wav";
+    target = "http://some.server.com/upload.php";
+}
+2014-06-21 16:42:10.120 HelloWorld[10232:70b] Finished playing audio sample 'recording.wav'
+2014-06-21 16:42:11.695 HelloWorld[10232:70b] THREAD WARNING: ['FileTransfer'] took '1699.571045' ms. Plugin should use a background thread.
+2014-06-21 16:42:42.135 HelloWorld[10364:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:42:42.144 HelloWorld[10364:70b] Unlimited access to network resources
+2014-06-21 16:42:42.147 HelloWorld[10364:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:42:42.165 HelloWorld[10364:70b] [CDVTimer][file] 1.683950ms
+2014-06-21 16:42:42.166 HelloWorld[10364:70b] [CDVTimer][TotalPluginStartup] 2.341032ms
+2014-06-21 16:42:42.305 HelloWorld[10364:70b] Resetting plugins due to page load.
+2014-06-21 16:42:42.371 HelloWorld[10364:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:45:23.389 HelloWorld[10911:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:45:23.412 HelloWorld[10911:70b] Unlimited access to network resources
+2014-06-21 16:45:23.421 HelloWorld[10911:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:45:23.598 HelloWorld[10911:70b] [CDVTimer][file] 5.398989ms
+2014-06-21 16:45:23.599 HelloWorld[10911:70b] [CDVTimer][TotalPluginStartup] 5.869031ms
+2014-06-21 16:45:23.960 HelloWorld[10911:70b] Resetting plugins due to page load.
+2014-06-21 16:45:24.196 HelloWorld[10911:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:45:42.828 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:45:42.829 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155517",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:45:57.425 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:45:57.426 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155518",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:46:00.710 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:46:00.711 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155519",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:46:01.283 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:46:01.283 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155520",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:46:01.492 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:46:01.493 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155521",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:46:01.700 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:46:01.700 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155522",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:49:25.257 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:49:25.258 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155523",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:49:26.261 HelloWorld[10911:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:49:26.261 HelloWorld[10911:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars272155524",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:57:30.223 HelloWorld[11373:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 16:57:30.239 HelloWorld[11373:70b] Unlimited access to network resources
+2014-06-21 16:57:30.243 HelloWorld[11373:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 16:57:30.269 HelloWorld[11373:70b] [CDVTimer][file] 2.393007ms
+2014-06-21 16:57:30.269 HelloWorld[11373:70b] [CDVTimer][TotalPluginStartup] 2.829015ms
+2014-06-21 16:57:30.439 HelloWorld[11373:70b] Resetting plugins due to page load.
+2014-06-21 16:57:30.543 HelloWorld[11373:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 16:57:32.805 HelloWorld[11373:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:57:32.806 HelloWorld[11373:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars651627633",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 16:57:33.655 HelloWorld[11373:70b] ERROR: Plugin 'OpenEars' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-06-21 16:57:33.655 HelloWorld[11373:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "OpenEars651627634",
+  "OpenEars",
+  "speak",
+  [
+    "I'm coming for you, motherfucker"
+  ]
+]
+2014-06-21 17:19:48.167 HelloWorld[12219:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 17:19:48.177 HelloWorld[12219:70b] Unlimited access to network resources
+2014-06-21 17:19:48.181 HelloWorld[12219:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 17:19:48.203 HelloWorld[12219:70b] [CDVTimer][file] 2.732992ms
+2014-06-21 17:19:48.203 HelloWorld[12219:70b] [CDVTimer][TotalPluginStartup] 3.096998ms
+2014-06-21 17:19:48.395 HelloWorld[12219:70b] Resetting plugins due to page load.
+2014-06-21 17:19:48.497 HelloWorld[12219:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 17:22:05.007 HelloWorld[12612:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 17:22:05.020 HelloWorld[12612:70b] Unlimited access to network resources
+2014-06-21 17:22:05.025 HelloWorld[12612:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 17:22:05.055 HelloWorld[12612:70b] [CDVTimer][file] 2.439976ms
+2014-06-21 17:22:05.056 HelloWorld[12612:70b] [CDVTimer][TotalPluginStartup] 2.882004ms
+2014-06-21 17:22:05.248 HelloWorld[12612:70b] Resetting plugins due to page load.
+2014-06-21 17:22:05.337 HelloWorld[12612:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 17:22:06.448 HelloWorld[12612:70b] Will use resource 'http://tts-api.com/tts.mp3?q=hello+world' from the Internet.
+2014-06-21 17:22:13.777 HelloWorld[12612:70b] Playing audio sample 'http://tts-api.com/tts.mp3?q=hello+world'
+2014-06-21 17:22:13.795 HelloWorld[12612:70b] THREAD WARNING: ['Media'] took '7346.997803' ms. Plugin should use a background thread.
+2014-06-21 17:22:14.843 HelloWorld[12612:70b] Finished playing audio sample 'http://tts-api.com/tts.mp3?q=hello+world'
+2014-06-21 17:22:51.915 HelloWorld[12846:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 17:22:51.922 HelloWorld[12846:70b] Unlimited access to network resources
+2014-06-21 17:22:51.925 HelloWorld[12846:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 17:22:51.943 HelloWorld[12846:70b] [CDVTimer][file] 1.555026ms
+2014-06-21 17:22:51.943 HelloWorld[12846:70b] [CDVTimer][TotalPluginStartup] 1.886010ms
+2014-06-21 17:22:52.017 HelloWorld[12846:70b] Resetting plugins due to page load.
+2014-06-21 17:22:52.077 HelloWorld[12846:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 17:32:47.170 HelloWorld[14019:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 17:32:47.183 HelloWorld[14019:70b] Unlimited access to network resources
+2014-06-21 17:32:47.201 HelloWorld[14019:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 17:32:47.232 HelloWorld[14019:70b] [CDVTimer][file] 4.248023ms
+2014-06-21 17:32:47.233 HelloWorld[14019:70b] [CDVTimer][TotalPluginStartup] 5.305052ms
+2014-06-21 17:32:47.408 HelloWorld[14019:70b] Resetting plugins due to page load.
+2014-06-21 17:32:47.509 HelloWorld[14019:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 17:33:21.103 HelloWorld[14019:70b] Will use resource 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command' from the Internet.
+2014-06-21 17:33:22.982 HelloWorld[14019:70b] Playing audio sample 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command'
+2014-06-21 17:33:22.996 HelloWorld[14019:70b] THREAD WARNING: ['Media'] took '1893.064941' ms. Plugin should use a background thread.
+2014-06-21 17:33:23.101 HelloWorld[14019:70b] Will use resource 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command' from the Internet.
+2014-06-21 17:33:23.111 HelloWorld[14019:70b] Playing audio sample 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command'
+2014-06-21 17:33:23.126 HelloWorld[14019:70b] THREAD WARNING: ['Media'] took '25.446777' ms. Plugin should use a background thread.
+2014-06-21 17:33:24.737 HelloWorld[14019:70b] Finished playing audio sample 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command'
+2014-06-21 17:33:24.864 HelloWorld[14019:70b] Finished playing audio sample 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command'
+2014-06-21 17:33:25.524 HelloWorld[14019:70b] Will use resource 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command' from the Internet.
+2014-06-21 17:33:25.539 HelloWorld[14019:70b] Playing audio sample 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command'
+2014-06-21 17:33:25.550 HelloWorld[14019:70b] THREAD WARNING: ['Media'] took '25.566895' ms. Plugin should use a background thread.
+2014-06-21 17:33:27.291 HelloWorld[14019:70b] Finished playing audio sample 'http://tts-api.com/tts.mp3?q=Your%20voice%20is%20my%20command'
+2014-06-21 17:33:36.159 HelloWorld[14147:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 17:33:36.167 HelloWorld[14147:70b] Unlimited access to network resources
+2014-06-21 17:33:36.169 HelloWorld[14147:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 17:33:36.187 HelloWorld[14147:70b] [CDVTimer][file] 1.412034ms
+2014-06-21 17:33:36.188 HelloWorld[14147:70b] [CDVTimer][TotalPluginStartup] 1.964986ms
+2014-06-21 17:33:36.234 HelloWorld[14147:70b] Resetting plugins due to page load.
+2014-06-21 17:33:36.285 HelloWorld[14147:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 17:34:00.610 HelloWorld[14299:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-21 17:34:00.630 HelloWorld[14299:70b] Unlimited access to network resources
+2014-06-21 17:34:00.648 HelloWorld[14299:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-21 17:34:00.701 HelloWorld[14299:70b] [CDVTimer][file] 2.537966ms
+2014-06-21 17:34:00.709 HelloWorld[14299:70b] [CDVTimer][TotalPluginStartup] 10.114014ms
+2014-06-21 17:34:00.901 HelloWorld[14299:70b] Resetting plugins due to page load.
+2014-06-21 17:34:00.999 HelloWorld[14299:70b] Finished load of: file:///Users/bobby/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/5A94AFAB-45D2-4FCD-A088-2F0C9A8EF069/HelloWorld.app/www/index.html
+2014-06-21 17:34:04.372 HelloWorld[14299:70b] Will use resource 'http://tts-api.com/tts.mp3?q=I%20don't%20know%20who%20you%20are.%20I%20don't%20know%20what%20you%20want.%20If%20you%20are%20looking%20for%20ransom,%20I%20can%20tell%20you%20I%20don't%20have%20money.%20But%20what%20I%20do%20have%20are%20a%20very%20particular%20set%20of%20skills,%20skills%20I%20have%20acquired%20over%20a%20very%20long%20career.%20Skills%20that%20make%20me%20a%20nightmare%20for%20people%20like%20you.%20If%20you%20let%20my%20daughter%20go%20now,%20that'll%20be%20the%20end%20of%20it.%20I%20will%20not%20look%20for%20you,%20I%20will%20not%20pursue%20you.%20But%20if%20you%20don't,%20I%20will%20look%20for%20you,%20I%20will%20find%20you,%20and%20I%20will%20kill%20you.' from the Internet.
+2014-06-21 17:34:07.218 HelloWorld[14299:70b] Playing audio sample 'http://tts-api.com/tts.mp3?q=I%20don't%20know%20who%20you%20are.%20I%20don't%20know%20what%20you%20want.%20If%20you%20are%20looking%20for%20ransom,%20I%20can%20tell%20you%20I%20don't%20have%20money.%20But%20what%20I%20do%20have%20are%20a%20very%20particular%20set%20of%20skills,%20skills%20I%20have%20acquired%20over%20a%20very%20long%20career.%20Skills%20that%20make%20me%20a%20nightmare%20for%20people%20like%20you.%20If%20you%20let%20my%20daughter%20go%20now,%20that'll%20be%20the%20end%20of%20it.%20I%20will%20not%20look%20for%20you,%20I%20will%20not%20pursue%20you.%20But%20if%20you%20don't,%20I%20will%20look%20for%20you,%20I%20will%20find%20you,%20and%20I%20will%20kill%20you.'
+2014-06-21 17:34:07.228 HelloWorld[14299:70b] THREAD WARNING: ['Media'] took '2856.343018' ms. Plugin should use a background thread.
+2014-06-21 17:34:38.360 HelloWorld[14299:70b] Finished playing audio sample 'http://tts-api.com/tts.mp3?q=I%20don't%20know%20who%20you%20are.%20I%20don't%20know%20what%20you%20want.%20If%20you%20are%20looking%20for%20ransom,%20I%20can%20tell%20you%20I%20don't%20have%20money.%20But%20what%20I%20do%20have%20are%20a%20very%20particular%20set%20of%20skills,%20skills%20I%20have%20acquired%20over%20a%20very%20long%20career.%20Skills%20that%20make%20me%20a%20nightmare%20for%20people%20like%20you.%20If%20you%20let%20my%20daughter%20go%20now,%20that'll%20be%20the%20end%20of%20it.%20I%20will%20not%20look%20for%20you,%20I%20will%20not%20pursue%20you.%20But%20if%20you%20don't,%20I%20will%20look%20for%20you,%20I%20will%20find%20you,%20and%20I%20will%20kill%20you.'
