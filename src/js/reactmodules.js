@@ -95,9 +95,8 @@ module.exports.expenses = React.createClass({
     
   },
   render: function(){
-    return React.DOM.div({className:'expensesChart'}, [
-      React.DOM.p({className:'response'}, this.state.text),
+    return React.DOM.div({className:'expensesChart'},
       barChart({buckets:this.state.buckets})
-    ]);
+    );
   }
 });

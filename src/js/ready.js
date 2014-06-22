@@ -92,7 +92,7 @@ module.exports = function(){
             if(!!text){
               speak(text);  
             } else {
-              speak("I don't understand. I'm sorry, but I was born just yesterday, I'm still learning the language.");
+              speak("Sorry, I coudn't quite get that.");
             }
             
           });

@@ -56,6 +56,7 @@ module.exports = function(audioBuffer) {
     return routeToAPI(resultObj);
   })
   .then(function(res){
+    $('.content').append('<p>' + res.text + '</p>');
     if((parsedQuery.intent === 'expense' || parsedQuery.intent === 'receipt') && parsedQuery.action === 'fetch'){
       visuals.listExpenses(res.text, res.data);
     }
@@ -67,6 +68,9 @@ module.exports = function(audioBuffer) {
   });
 
 };
+
+
+
 
 function routeToAPI(resultObj){
   console.log("resultObj",resultObj);
@@ -107,7 +111,7 @@ function routeToAPI(resultObj){
   }
 
   return {
-    text: "I couldn't quite get that. Sorry, but I was born like yesterday. I'm still learning the language.",
+    text: "Sorry, I couldn't quite get that.",
     data: {}
   };
 
