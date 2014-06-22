@@ -50,5 +50,4 @@
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
     </feature>
-    <plugin name="OpenEarsTTS" value="OpenEars" />
 </widget>
