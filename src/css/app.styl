@@ -33,6 +33,29 @@ oblue = #18CAE6
   100%
     transform translateX(-94px)
 
+@keyframes bounceInUp
+  0%
+    opacity 0
+    -webkit-transform translateY(2000px)
+    -ms-transform translateY(2000px)
+    transform translateY(2000px)
+
+  60%
+    opacity 1
+    -webkit-transform translateY(-30px)
+    -ms-transform translateY(-30px)
+    transform translateY(-30px)
+
+  80%
+    -webkit-transform translateY(10px)
+    -ms-transform translateY(10px)
+    transform translateY(10px)
+
+  100%
+    -webkit-transform translateY(0)
+    -ms-transform translateY(0)
+    transform translateY(0)
+
 body
   background black
 
@@ -106,7 +129,7 @@ body
     word-wrap: break-word
     // display none
     &:focus
-      background rgba(0,0,0,0.5)
+      background rgba(0,0,0,0.9)
       width 260px
 
       color ogreen
@@ -127,4 +150,51 @@ h1
   padding 0
   font-size 1.6rem
 
+
+
+.convo
+  position absolute
+  top 3rem
+  left 0
+  right 0
+  height 460px
+  transition 0.5s ease
+  &.moveup
+    height 200px
+  &::before
+    content ''
+    position absolute
+    top 0
+    left 0
+    right 0
+    height 2rem
+    background linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,0));
+    z-index 10
+  &::after
+    z-index 10
+    content ''
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height 2rem
+    background linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
+  .content
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    overflow scroll
+    -webkit-overflow-scrolling touch
+    padding 2rem 0
+    font-family 'Helvetica Neue', Helvetica, sans-serif
+    color white
+    .user
+      color oblue
+      text-align right
+      font-size 1rem
+      animation-name bounceInUp
+      animation-duration 1s
+      padding .5rem 1rem .5rem 2rem
 

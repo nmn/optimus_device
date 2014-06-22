@@ -27,6 +27,7 @@ module.exports = function(){
   var $voice = $('.voice');
   var $text = $('.text');
   var $wave = $('.wave');
+  var $convo = $('.convo');
 
   var mediaRec;
 
@@ -44,7 +45,7 @@ module.exports = function(){
     //apiManager.executeCommand("test");
     //console.log("test");
     mediaRec.stopRecord();
-    mediaRec.play();
+    //mediaRec.play();
 
     // audioManager.uploadWav('recording1.wav', function(speechCmd){
     //   apiManager.executeCommand(speechCmd);
@@ -76,6 +77,7 @@ module.exports = function(){
     $text.addClass('moveup');
     $voice.addClass('moveup');
     $wave.addClass('moveup');
+    $convo.addClass('moveup');
     var callback = function(e){
       $text.focus();
       $text.off('webkitTransitionEnd', callback);
@@ -91,6 +93,7 @@ module.exports = function(){
     $text.removeClass('moveup');
     $voice.removeClass('moveup');
     $wave.removeClass('moveup');
+    $convo.removeClass('moveup');
   });
 
   var textLength = 0;
