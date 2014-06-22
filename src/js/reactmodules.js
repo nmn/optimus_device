@@ -136,9 +136,21 @@ module.exports.Tickets = React.createClass({
     return React.DOM.div({}, this.props.data.map(function(ticket){
       return React.DOM.div({className:'ticket'}, [
         React.DOM.h3({}, ticket.subject),
-        React.DOM.p({}, ticket.description),
-        React.DOM.span({}, new Date(ticket.updated_at))
+        React.DOM.p({}, ticket.description)
       ]);
+    }));
+  }
+});
+
+// React.DOM.span({}, new Date(ticket.updated_at))
+
+
+module.exports.Cards = React.createClass({
+  render: function(){
+    return React.DOM.div({}, this.props.data.map(function(card){
+      return React.DOM.div({className:'ticket'},
+        React.DOM.h3({}, card.name)
+      );
     }));
   }
 });

@@ -62,7 +62,7 @@ module.exports = function(audioBuffer) {
     } else if(!!parsedQuery.isZen){
       visuals.showTickets(res.text, res.data);
     } else if(parsedQuery.isTrello && parsedQuery.action === 'fetch'){
-      //
+      visuals.showCards(res.text, res.data);
     }
     console.log("res",res);
     return res.text;
