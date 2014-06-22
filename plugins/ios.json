@@ -10,19 +10,19 @@
                     "AssetsLibrary.framework": [
                         {
                             "xml": "false",
-                            "count": 3
+                            "count": 4
                         }
                     ],
                     "MobileCoreServices.framework": [
                         {
                             "xml": "false",
-                            "count": 2
+                            "count": 3
                         }
                     ],
                     "CoreGraphics.framework": [
                         {
                             "xml": "false",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "AudioToolbox.framework": [
@@ -50,6 +50,18 @@
                         }
                     ],
                     "QuartzCore.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "ImageIO.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ],
+                    "CoreLocation.framework": [
                         {
                             "xml": "false",
                             "count": 1
@@ -91,6 +103,10 @@
                         {
                             "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -117,6 +133,9 @@
             "PACKAGE_NAME": "com.namangoel.hello"
         },
         "org.apache.cordova.console": {
+            "PACKAGE_NAME": "com.namangoel.hello"
+        },
+        "org.apache.cordova.camera": {
             "PACKAGE_NAME": "com.namangoel.hello"
         }
     },

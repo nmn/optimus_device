@@ -47,6 +47,22 @@ module.exports = function(){
     //     // alert("Scanning failed: " + error);
     //   }
     // );
+
+    // navigator.device.capture.captureImage(
+    //   function(mediaFiles) {
+    //     //success
+    //       for (var i = 0; i < mediaFiles.length; i++) {
+    //           var path = mediaFiles[i].fullPath;
+    //           alert(path);
+    //           // do something interesting with the file
+    //       }
+    //    }, 
+    //   function(error) {
+    //     //error
+    //       navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+    //   }
+    // );
+
     $text.addClass('disabled');
     $wave.addClass('active');
     mediaRec = new Media('recording1.wav', captureSuccess, captureError);
