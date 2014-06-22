@@ -1,4 +1,4 @@
-exports.speakText = function(str){
+module.exports = function(str){
   console.log("Speak:", str);
   var successCb = function(e){
     console.log("success:", e);

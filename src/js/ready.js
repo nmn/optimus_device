@@ -1,7 +1,7 @@
 var $ = require('jquery');
 var audioManager = require('./audioManager');
 //var apiManager = require('./apiManager');
-//var speechManager = require//('./speechManager');
+var speak = require('./speechManager');
 
 
 var captureSuccess = function(mediaFiles) {
@@ -72,7 +72,14 @@ module.exports = function(){
         reader.onloadend = function(evt) {
           //console.log(evt.target.result);
           //base = evt.target.result;
-          audioManager(evt.target.result);
+          audioManager(evt.target.result).then(function(text){
+            if(!!text){
+              speak(text);  
+            } else {
+              speak("I don't understand. I'm sorry, but I was born just yesterday, I'm still learning the language.");
+            }
+            
+          });
         };
         reader.readAsArrayBuffer(file);
 
