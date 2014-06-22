@@ -61,20 +61,58 @@ module.exports = function(audioBuffer) {
 };
 
 function routeToAPI(resultObj){
-  switch(resultObj.action){
-    case 'create':
-      return $ajax({
-          url: server+'/expenses',
-          type: "POST",
-          data: {category_id:resultObj.subject, amount:resultObj.number },
-        });
-    case 'fetch':
+  console.log("resultObj",resultObj);
+  //Zendesk only gets
+  if(resultObj.isZen === 'true'){
     return $ajax({
-        url: server+'/expenses',
-        type: "GET",
-      });
-    default : console.log("there was an error sending to APIs");
+      url: server+'/zendesk',
+      type: "GET",
+    });
   }
+
+  //Trello must create tasks and get tasks
+  if(resultObj.isTrello === 'true' && resultObj.action === 'create'){
+    return $ajax({
+      url: server+'/tasks',
+      type: "POST",
+      data: {listName:'basic', taskName:resultObj.subject},
+    });
+  }else if(resultObj.isTrello === 'true' && resultObj.action === 'fetch'){
+    return $ajax({
+      url: server+'/tasks',
+      type: "GET",
+    });
+  }
+
+  //Freebook must post and get expenses and receipt
+  if(resultObj.intent ==='expense' && resultObj.action === 'create'){
+    return $ajax({
+      url: server+'/expenses',
+      type: "POST",
+      data: {amount:resultObj.number, notes:resultObj.subject},
+    });
+  }else if(resultObj.intent ==='expense' && resultObj.action === 'fetch'){
+    return $ajax({
+      url: server+'/expenses',
+      type: "GET",
+    });
+  }
+
+  //routes need to be added:
+  // if(resultObj.intent ==='receipt' && resultObj.action === 'create'){
+  //   return $ajax({
+  //     url: server+'/receipt',
+  //     type: "POST",
+  //     data: {amount:resultObj.number, notes:resultObj.subject},
+  //   });
+  // }else if(resultObj.intent ==='receipt' && resultObj.action === 'fetch'){
+  //   return $ajax({
+  //     url: server+'/receipt',
+  //     type: "GET",
+  //   });
+  // }
+
+
 
 }
 

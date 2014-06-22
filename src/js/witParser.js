@@ -2,29 +2,56 @@ var Promise = require('bluebird');
 var resultObj = {};
 
 module.exports = function(witString){
-
     var words = witString.split(" ");
+    console.log("words",words);
 
+    isZen(words);
+    isTrello(words);
     getIntent(words);
     getAction(words);
     getSubject(words);
     getNum(words);
 
     return resultObj;
+};
+
+function isZen(words){
+  var zenStrings = ['ticket', 'question', 'customer','service','help','request'];
+
+  for (var i = 0; i < words.length; i++) {
+    if(zenStrings.indexOf(words[i]) !== -1){
+      resultObj.isZen = 'true';
+    }
+  };
+
+  resultObj.isZen = resultObj.isZen || 'false';
+
+};
+
+function isTrello(words){
+  var trelloStrings = ['tasks', 'task', 'lists', 'boards', 'cards'];
+
+  for (var i = 0; i < words.length; i++) {
+    if(trelloStrings.indexOf(words[i]) !== -1){
+      resultObj.isTrello = 'true';
+    }
+  };
+
+  resultObj.isTrello = resultObj.isTrello || 'false';
 
 };
 
 function getIntent(words){
-  var expenseStrings = ['expense', 'expenditure', 'paid', 'debit'];
+  var expenseStrings = ['expense','expenses', 'expenditure', 'paid', 'debit'];
   var creditStrings = ['earned', 'received', 'got', 'credit'];
 
   for (var i = 0; i < words.length; i++) {
     if(expenseStrings.indexOf(words[i]) !== -1){
-      resultObj.intent = "debit";
+      resultObj.intent = "expense";
     }
   };
 
-  resultObj.intent = resultObj.intent || "credit";
+  resultObj.intent = resultObj.intent || "receipt";
 
 };
 
