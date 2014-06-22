@@ -9191,16 +9191,74 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
+var $ = require("jquery");
+
+var Trello = function(key, token){
+  var apiUrl = "https://api.trello.com";
+  this.get = function(route, options, cb){
+    options = options || {};
+    cb = cb || function(){};
+    if(typeof(options) === "function"){
+      cb = options;
+      options = {};
+    }
+    options.key = key;
+    options.token = token;
+    var str = "";
+    for (var k in options) {
+        if (str !== "") {
+            str += "&";
+        }
+        str += k + "=" + options[k];
+    }
+    console.log("GET:", apiUrl+route+"?"+str);
+    $.ajax({
+      url:apiUrl+route+"?"+str,
+      type:"GET",
+      success: function(data, textStatus, jqXHR){
+        cb(null, data);
+      },
+      error: function (jqXHR, textStatus, errorThrown){
+        cb(errorThrown);
+      }
+    });
+  };
+};
+module.exports = Trello;
+},{"jquery":1}],3:[function(require,module,exports){
 var speechManager = require("./speechManager");
+var Trello = require("./api/Trello");
 
 exports.executeCommand = function (speechStr){
   console.log("Command:", speechStr);
-  speechManager.speakText("I'm alive!!!! Motherfucker");
+  speechManager.speakText("Successfully executed command");
+  trelloMe();
 };
-},{"./speechManager":6}],3:[function(require,module,exports){
+
+var trelloMe = function(){
+  var trello = new Trello("ca91d6e6ecb68c343dd04faf87a95f9d", "b821007d0d1125bc93b472e44408eb2314b3497b499a7d6c332d81f54203589e");
+
+  trello.get("/1/members/me", function(err, data) {
+    if (err) throw err;
+    console.log("me:", data);
+  });
+
+  // URL arguments are passed in as an object.
+  trello.get("/1/members/me", { cards: "open" }, function(err, data) {
+    if (err) throw err;
+    console.log("me2:", data);
+  });
+
+  trello.get("/1/boards/520d2958eba304990d0006ea", function(err, data) {
+    if (err) throw err;
+    console.log("boards:", data);
+  });
+};
+},{"./api/Trello":2,"./speechManager":7}],4:[function(require,module,exports){
 var onDeviceReady = require('./ready.js');
+
 document.addEventListener('deviceready', onDeviceReady, false);
-},{"./ready.js":5}],4:[function(require,module,exports){
+},{"./ready.js":6}],5:[function(require,module,exports){
 exports.uploadWav = function(audioURI, cb) {
     var options = new FileUploadOptions();
     options.fileKey = "file";
@@ -9236,10 +9294,12 @@ exports.uploadWav = function(audioURI, cb) {
 
 
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 var $ = require('jquery');
 var audioManager = require('./audioManager');
 var apiManager = require('./apiManager');
+var speechManager = require('./speechManager');
+
 
 var captureSuccess = function(mediaFiles) {
   console.log('success', arguments);
@@ -9252,6 +9312,7 @@ var captureError = function(error) {
 
 
 module.exports = function(){
+
 
   var $voice = $('.voice');
   var $text = $('.text');
@@ -9268,12 +9329,16 @@ module.exports = function(){
   $voice.on('touchend', function(){
     $text.removeClass('disabled');
     $wave.removeClass('active');
+    apiManager.executeCommand("test");
+    console.log("test");
     mediaRec.stopRecord();
     mediaRec.play();
+
     // audioManager.uploadWav('recording.wav', function(speechCmd){
     //   apiManager.executeCommand(speechCmd);
     // });
   });
+
 
   $text.on('touchend', function(e){
     if($text.hasClass('moveup')){
@@ -9298,7 +9363,6 @@ module.exports = function(){
     $text.removeClass('moveup');
     $voice.removeClass('moveup');
     $wave.removeClass('moveup');
-
   });
 
   var textLength = 0;
@@ -9355,8 +9419,16 @@ module.exports = function(){
 
 
 
-},{"./apiManager":2,"./audioManager":4,"jquery":1}],6:[function(require,module,exports){
+},{"./apiManager":3,"./audioManager":5,"./speechManager":7,"jquery":1}],7:[function(require,module,exports){
 exports.speakText = function(str){
   console.log("Speak:", str);
+  var successCb = function(e){
+    console.log("success:", e);
+  };
+  var failCb = function(e){
+    console.log("fail:", e);
+  };
+  var mediaRec = new Media(encodeURI('http://tts-api.com/tts.mp3?q='+str), successCb, failCb);
+  mediaRec.play();
 };
-},{}]},{},[3])
+},{}]},{},[4])
