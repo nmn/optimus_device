@@ -31,6 +31,7 @@
     "jquery": "^2.1.1",
     "nib": "^1.0.3",
     "react": "^0.10.0",
+    "reqwest": "^1.1.0",
     "vinyl-source-stream": "^0.1.1"
   }
 }
