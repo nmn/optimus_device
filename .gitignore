@@ -5,3 +5,5 @@ www/js/index.js
 platforms/ios/www/js/index.js
 platforms/ios/cordova/console.log
 platforms/ios/www/
+www/js
+www/css
