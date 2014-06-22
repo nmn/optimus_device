@@ -1,5 +1,6 @@
 var reqwest = require('reqwest');
 var $ = require('jquery');
+var Promise = require('bluebird');
 
 module.exports = function(audioBuffer) {
 
@@ -46,7 +47,7 @@ module.exports = function(audioBuffer) {
   }))
   .then(function(obj){
     // add function here...
-    
+
     console.log(obj);
   })
 
