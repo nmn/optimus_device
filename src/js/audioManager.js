@@ -1,22 +1,12 @@
-var reqwest = require('reqwest');
-var $ = require('jquery');
 var Promise = require('bluebird');
+var witParser = require('./witParser.js');
+var $ = require('jquery');
 var visuals = require('./visuals');
 
-module.exports = function(audioBuffer) {
 
-  // reqwest({
-  //   url: 'https://api.wit.ai/speech',
-  //   method: 'post',
-  //   contentType: 'audio/wav',
-  //   headers: {
-  //     'Authorization': 'Bearer DOOZE6JRCO6KG5HUOKSN4M5RDPHOX465',
-  //     'Accept': 'application/vnd.wit.20140528+json'
-  //   },
-  //   data: audioBuffer
-  // })
-  // .then(console.log.bind(console, 'from wit'))
-  // .fail(console.log.bind(console, 'wit fail: '));
+var server = "http://localhost:3000";
+
+module.exports = function(audioBuffer) {
 
   return (new Promise(function(resolve, reject){
     $.ajax({
@@ -48,52 +38,73 @@ module.exports = function(audioBuffer) {
   }))
   .then(JSON.parse)
   .then(function(obj){
-    console.log(obj);
     visuals.userCommand(obj.msg_body);
-
-    // add function here...
-
-
-    console.log(obj);
+    return witParser(obj.msg_body);
+  })
+  .then(function(resultObj){
+    console.log("obj",resultObj);
+    return new Promise(function(resolve,reject){
+      resolve(routeToAPI(resultObj));
+    });
+  })
+  .then(function(res){
+    console.log("res",res);
+  })
+  .catch(function(err){
+    console.log("error sending to Wit", err);
   })
 
-  
-
-  // var options = new FileUploadOptions();
-  // options.fileKey = "file";
-  // options.fileName = audioURI.substr(audioURI.lastIndexOf('/')+1);
-  // options.mimeType = "audio/wav";
-
-  // var params = {};
-  // params.value1 = "test";
-  // params.value2 = "param";
-
-  // options.params = params;
-
-  // console.log("URI:", options.fileName);
-
-  // var ft = new FileTransfer();
-  // var successCb = function(r) {
-  //     console.log("Code = " + r.responseCode);
-  //     console.log("Response = " + r.response);
-  //     console.log("Sent = " + r.bytesSent);
-  //     cb("Sample Text");
-  // };
-  // var failCb = function(error) {
-  //     alert("An error has occurred: Code = " + error.code);
-  //     console.log("upload error source " + error.source);
-  //     console.log("upload error target " + error.target);
-  // };
-
-  // ft.upload(audioURI, encodeURI("http://some.server.com/upload.php"), successCb, failCb, options);
-
-
-  //   curl \
-  // -H 'Authorization: Bearer DOOZE6JRCO6KG5HUOKSN4M5RDPHOX465' \
-  // 'https://api.wit.ai/message?v=20140621&q='
-
-   
 };
+
+function routeToAPI(resultObj){
+  switch(resultObj.action){
+    case 'create':
+      return (new Promise(function(resolve, reject){
+        $.ajax({
+          url: server+'/expenses',
+          type: "POST",
+          data: {category_id:33 },
+          success: function(res){
+            if(!!res){
+              resolve(res);
+            } else {
+              reject(res);
+            }
+          },
+          error: function(res){
+            if(!!res.responseText){
+              resolve(res.responseText);
+            } else {
+              reject(res);
+            }
+          }
+        });
+      }))
+    case 'fetch':
+    return (new Promise(function(resolve, reject){
+      $.ajax({
+        url: server+'/expenses',
+        type: "GET",
+        success: function(res){
+          if(!!res){
+            resolve(res);
+          } else {
+            reject(res);
+          }
+        },
+        error: function(res){
+          if(!!res.responseText){
+            resolve(res.responseText);
+          } else {
+            reject(res);
+          }
+        }
+      });
+    }))
+    default : console.log("there was an error sending to APIs");
+  }
+
+}
 
 
 
