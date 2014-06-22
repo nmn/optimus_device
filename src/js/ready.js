@@ -1,6 +1,8 @@
 var $ = require('jquery');
 var audioManager = require('./audioManager');
 var apiManager = require('./apiManager');
+var speechManager = require('./speechManager');
+
 
 var captureSuccess = function(mediaFiles) {
   console.log('success', arguments);
@@ -13,6 +15,7 @@ var captureError = function(error) {
 
 
 module.exports = function(){
+
 
   var $voice = $('.voice');
   var $text = $('.text');
@@ -35,6 +38,7 @@ module.exports = function(){
     //   apiManager.executeCommand(speechCmd);
     // });
   });
+
 
   $text.on('touchend', function(e){
     if($text.hasClass('moveup')){
@@ -59,7 +63,6 @@ module.exports = function(){
     $text.removeClass('moveup');
     $voice.removeClass('moveup');
     $wave.removeClass('moveup');
-
   });
 
   var textLength = 0;
