@@ -56,7 +56,7 @@ module.exports = function(audioBuffer) {
     return routeToAPI(resultObj);
   })
   .then(function(res){
-    if((parsedQuery.intent === 'debit' || parsedQuery.intent === 'credit') && parsedQuery.action === 'fetch'){
+    if((parsedQuery.intent === 'expense' || parsedQuery.intent === 'receipt') && parsedQuery.action === 'fetch'){
       visuals.listExpenses(res.text, res.data);
     }
     console.log("res",res);
